@@ -9,7 +9,7 @@ google_maps_javascript_api_key:
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo:     # Do like this: /images/siteicon.png
+logo:  "/images/logo.svg"   # Do like this: /images/siteicon.png
 description: 
 author:
   name:
