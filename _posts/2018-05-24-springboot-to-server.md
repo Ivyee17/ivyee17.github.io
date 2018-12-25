@@ -1,18 +1,16 @@
 ---
-layout:     post
-title:      Springboot to Server
-subtitle:   
-date:       2018-05-24
-author:     Fairy17
-header-img: img/post-bg-ios9-web.jpg
-catalog:    true
-tags:
+date:  2018-05-24
+title:  Springboot to Server
+categories:
     - SpringBoot
     - Server
     - Publish
+author_staff_member: Fairy17
 ---
 
-# 服务器上传流程
+A brief introduction
+
+## 服务器上传流程
 
 > 步骤： （1）修改为`war` （2）`install` （3）复制`war` （4）运行命令`java -jar`
 
@@ -20,27 +18,27 @@ tags:
 
 1. 首先修改`pom.xml`中的代码，把`<packaging></packaging>`中的`jar`改为`war`。  
 
-![image](/image/springboot-to-server/1.png)   
+![image](/images/springboot-to-server/1.png)   
 
 2. 点击右侧边栏的Maven Projects（如没有可以尝试点击IDEA左下角按钮），双击Lifecycle下的`install`即可打包。  
 
-![image](https://raw.githubusercontent.com/fairy17/fairy17.github.io/master/image/springboot-to-server/2.bmp)   
+![image](https://raw.githubusercontent.com/fairy17/fairy17.github.io/master/images/springboot-to-server/2.bmp)   
 
-![image](https://raw.githubusercontent.com/fairy17/fairy17.github.io/master/image/springboot-to-server/3.bmp)   
+![image](https://raw.githubusercontent.com/fairy17/fairy17.github.io/master/images/springboot-to-server/3.bmp)   
 
 3. 打包后的.war和.war.original文件会出现在Spring Boot工程项目下的target目录。
 
-![image](https://raw.githubusercontent.com/fairy17/fairy17.github.io/master/image/springboot-to-server/4.bmp)   
+![image](https://raw.githubusercontent.com/fairy17/fairy17.github.io/master/images/springboot-to-server/4.bmp)   
 
 ## 二、部署到服务器
 
 1. 服务器上安装jdk1.8、tomcat7（`apt-get update`）和数据库（已安装）。
-![image](https://raw.githubusercontent.com/fairy17/fairy17.github.io/master/image/springboot-to-server/5.bmp)   
+![image](https://raw.githubusercontent.com/fairy17/fairy17.github.io/master/images/springboot-to-server/5.bmp)   
 2. 通过Winscp等工具上传两个war文件至服务器。
 3. 登录服务器，检查是否上传完成。
-![image](https://raw.githubusercontent.com/fairy17/fairy17.github.io/master/image/springboot-to-server/6.bmp)   
+![image](https://raw.githubusercontent.com/fairy17/fairy17.github.io/master/images/springboot-to-server/6.bmp)   
 4. 输入命令java -jar xxx-0.0.1-SNAPSHOT.war，即可运行项目
-![image](https://raw.githubusercontent.com/fairy17/fairy17.github.io/master/image/springboot-to-server/7.bmp)   
+![image](https://raw.githubusercontent.com/fairy17/fairy17.github.io/master/images/springboot-to-server/7.bmp)   
 
 # 关于screen命令
 
