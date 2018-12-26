@@ -23,7 +23,7 @@ social:
 # -----
 # Build
 
-timezone: Etc/UTC
+Timezone: "America/New_York"  # Etc/UTC
 
 collections:
   staff_members:
