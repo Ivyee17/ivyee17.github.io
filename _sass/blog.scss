@@ -24,19 +24,7 @@
 		}
 	}
 
-	h3 {
-		margin: 0;
-		a {
-			color: #000;
-			text-decoration: none;
-			font-weight: normal;
-			font-size: 1.3em;
-		}
-	}
-
-	h2 {
-		text-align: left;
-	}
+	
 
 	.blog-navigation {
 		font-size: 14px;
@@ -75,6 +63,7 @@
 
 		.post-date {
 			float: right;
+			font-size: 0.9em;
 		}
 
 		&:after {
@@ -85,8 +74,10 @@
 	}
 
 	.post-content {
+		font-size: 0.75em;
 		.button {
 			margin: 30px 0 0 0;
+
 		}
 	}
 }
@@ -123,3 +114,4 @@
 		right: -3px;
 	}
 }
+

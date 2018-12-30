@@ -2,7 +2,7 @@
 # Site
 
 title: "Fairy's Home"
-url: "https://fairy17.github.io"
+url: "https://fairy17.github.io/"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -10,7 +10,7 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo:  "/images/logo.svg"   # must have! Do like this: /images/siteicon.png
-description: "bbb"
+description:
 author:
   name:
   email:
@@ -23,7 +23,7 @@ social:
 # -----
 # Build
 
-Timezone: "America/New_York"  # Etc/UTC
+Timezone: Etc/UTC
 
 collections:
   staff_members:
@@ -62,7 +62,7 @@ defaults:
     scope:
       path: "index.html"
     values:
-      layout: "default"
+      layout: ""
   -
     scope:
       path: "contact.html"

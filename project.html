@@ -2,90 +2,40 @@
 title: Project
 heading: Inspiration is more than submission.
 description: All projects in github (future will include projects from webpages or other githubs).
-pricing_table:
-  - name: Basic
+projects:
+  - name: "Timeline Project"
     color: "#8e8e8e"
     features:
-      - text: $25 per month
-        highlight: true
-      - text: Up to 5 users
-        highlight: false
-      - text: Basic lead scoring
-        highlight: false
-      - text: CRM
-        highlight: false
-      - text: Basic reporting
-        highlight: false
-      - text: Sales map
+      - text: A sample project used for software testing.
         highlight: false
     call_to_action:
-      link: http://mysite.com?plan=basic
-      text: Get started
-  - name: Pro
-    color: "#4a4a4a"
-    features:
-      - text: $99 per month
-        highlight: true
-      - text: Everything in Basic
-        highlight: false
-      - text: Up to 25 users
-        highlight: false
-      - text: Advanced lead scoring
-        highlight: false
-      - text: Pipeline management
-        highlight: false
-      - text: Advanced reporting
-        highlight: false
-    call_to_action:
-      link: http://mysite.com?plan=pro
-      text: Get started
-  - name: Professional
-    color: "#000000"
-    features:
-      - text: $299 per month
-        highlight: true
-      - text: Everything in Basic and Pro
-        highlight: false
-      - text: Up to 100 users
-        highlight: false
-      - text: Campaign builder
-        highlight: false
-      - text: Machine learning
-        highlight: false
-      - text: Calendar
-        highlight: false
-    call_to_action:
-      link: http://mysite.com?plan=professional
-      text: Get started
+      link: https://github.com/TimelineProject
+      text: Get
 faq:
-  - question: What types of payment do you accept?
-    answer: Credit cards including MasterCard, Visa or American Express.
-  - question: Can I change my plan at a later time?
-    answer: Yes, you can upgrade and downgrade your plan at anytime.
-  - question: Do you offer pricing for nonprofit organizations?
-    answer: Yes, send us a message and we'll set you up on our nonprofit pricing.
-  - question: Questions?
-    answer: Contact us for any further questions at <a href="#">john@business.com</a>.
+  - question: Why there are so many open-source code?
+    answer: To make it public to all people to learn.
+  - question: When will more projects set in here?
+    answer: No time sechduled. Contact author for details - <a href="#">1020645987@qq.com</a>.
 ---
 <div class="plans">
-	{% for plan in page.pricing_table %}
+	{% for project in page.projects %}
 		<ul class="plan">
-			<li style="background: {{ plan.color }}">
-				<h3>{{ plan.name }}</h3>
+			<li style="background: {{ project.color }}">
+				<h3>{{ project.name }}</h3>
 			</li>
-			{% for feature in plan.features %}
+			{% for feature in project.features %}
 				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}</li>
 			{% endfor %}
 
-			{% if plan.call_to_action %}
-				<li class="pricing-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
+			{% if project.call_to_action %}
+				<li class="pricing-cta"><div class="button"><a style="background: {{ project.color }}" href="{{ project.call_to_action.link }}">{{ project.call_to_action.text }} &rarr;</a></div></li>
 			{% endif %}
 		</ul>
 	{% endfor %}
 </div>
 
 {% if page.faq %}
-	<h2>Pricing FAQ</h2>
+	<h2>FAQ</h2>
 	<dl class="faq">
 		{% for item in page.faq %}
 			<div>
