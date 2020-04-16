@@ -1,12 +1,15 @@
 ---
 layout: page
 ---
-<div class="blog-post text-container">
-	{% include post-title.html post=page %}
+<div class="main">
 
-	<p class="editor-link"><a href="cloudcannon:collections/{{ page.path }}" class="btn"><strong>&#9998;</strong> Edit Post</a></p>
-	<div class="post-content">
+<div class="post-content">
+
+
+	<div class="blog-post">
+
 		{{ content }}
+
 
 		<div class="author">
 			{% assign author_id = page.author_staff_member | prepend: "/staff_members/" | append: "/" %}
@@ -43,4 +46,6 @@ layout: page
 			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 		{% endif %}
 	</div>
+</div>
+</div>
 </div>

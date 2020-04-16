@@ -1,18 +1,20 @@
 ---
-layout: default
+layout: mydefault
 ---
-<div class="content">
-	<section class="page">
-		<div class="container {% if page.full_width %}max-container{% endif %}">
-			{% if page.heading %}
-				<h2>{{ page.heading }}</h2>
-			{% elsif page.title and page.layout != 'archive' %}
-				<h2>{{ page.title }}</h2>
-			{% endif %}
-			{% if page.description %}
-				<p class="subtext">{{ page.description }}</p>
-			{% endif %}
-			{{ content }}
-		</div>
-	</section>
+<div id="wrapper">
+	<header id="header">
+		{% if page.heading %}
+		<h1>{{ page.heading }}</h1>
+		{% elsif page.title and page.layout != 'archive' %}
+		<h1>{{ page.title }}</h1>
+		{% endif %}
+		{% if page.description %}
+		<p >{{ page.description }}</p>
+		{% endif %}
+		<p>{% include post-title.html post=page %}</p>
+
+	</header>
+	<div id="main">
+		{{content}}
+	</div>
 </div>

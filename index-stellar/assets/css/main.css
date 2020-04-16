@@ -3784,3 +3784,90 @@ input, select, textarea {
 			}
 
 		}
+
+
+/* blogmd*/
+.blog-post {
+	line-height: 1.7;
+	overflow: hidden;
+	width: 650px;
+	padding-bottom: 30px;
+	font-size: 18px;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; }
+.blog-post h3 {
+	margin: 0; }
+.blog-post h3 a {
+	color: #000;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 1.5em; }
+.blog-post h1 {
+	text-align: center;
+	font-weight: 200;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+	margin-top: 10px;
+	font-size: 2em; }
+.blog-post h2 {
+	text-align: left;
+	font-weight: 800;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+	margin-top: 10px;
+	font-size: 1.5em; }
+.blog-post ul, .blog-post ol {
+	font-size: 18px;
+	line-height: 1.7;
+	text-align: -webkit-match-parent;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI; }
+.blog-post li {
+	text-align: -webkit-match-parent;
+	line-height: 2;
+	display: list-item;
+	margin: 10px 0px; }
+.blog-post code {
+	white-space: normal;
+	background-color: rgba(27, 31, 35, 0.05);
+	border-radius: 3px;
+	font-size: 85%;
+	margin: 0;
+	padding: .2em .4em;
+	font-family: Consolas,Liberation Mono,Courier,monospace;
+	box-sizing: border-box; }
+.blog-post img {
+	background-color: #fff;
+	box-sizing: initial;
+	max-width: 100%;
+	background-size: 80% 80%;
+	width: auto;
+	height: auto; }
+.blog-post table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	display: table;
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: grey;
+	font-size: 15px;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; }
+.blog-post tr {
+	background-color: #fff;
+	border-top: 1px solid #c6cbd1;
+	box-sizing: border-box;
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit; }
+.blog-post td {
+	border: 1px solid #dfe2e5;
+	padding: 6px 13px;
+	box-sizing: border-box;
+	display: table-cell;
+	vertical-align: inherit; }
+.blog-post thead {
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+	border-top-color: inherit;
+	border-right-color: inherit;
+	border-bottom-color: inherit;
+	border-left-color: inherit; }
+
+/*# sourceMappingURL=blogmd.css.map */

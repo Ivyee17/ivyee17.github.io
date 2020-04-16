@@ -6,11 +6,11 @@ layout: page
 	{% assign blog = site.pages | where: "path", "blog/index.html" | first %}
 
 	{% if blog.title %}
-		<h2>{{ blog.title }}</h2>
+	<h2>{{ blog.title }}</h2>
 	{% endif %}
 
 	{% if blog.description %}
-		<p class="subtext">{{ blog.description }}</p>
+	<p class="subtext">{{ blog.description }}</p>
 	{% endif %}
 
 	<div class="center-text">
