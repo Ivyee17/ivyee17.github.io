@@ -1,4 +1,5 @@
 ---
+layout: mydefault
 title: Project
 heading: Inspiration is more than submission.
 description: All projects in github (future will include projects from webpages or other githubs).
@@ -17,31 +18,42 @@ faq:
   - question: When will more projects set in here?
     answer: No time sechduled. Contact author for details - <a href="#">1020645987@qq.com</a>.
 ---
-<div class="plans">
-	{% for project in page.projects %}
-		<ul class="plan">
-			<li style="background: {{ project.color }}">
-				<h3>{{ project.name }}</h3>
-			</li>
-			{% for feature in project.features %}
-				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}</li>
-			{% endfor %}
+<div id="wrapper">
+	<!-- Header -->
+	<header id="header">
+		<h1>Project</h1>
+		<p>All projects are listed as follows.</p>
+	</header>
+	<div id ="main">
+        <div>
+            {% for project in page.projects %}
+                <ul class="plan">
+                    <li style="background: {{ project.color }}">
+                        <h3>{{ project.name }}</h3>
+                    </li>
+                    {% for feature in project.features %}
+                        <li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}</li>
+                    {% endfor %}
 
-			{% if project.call_to_action %}
-				<li class="pricing-cta"><div class="button"><a style="background: {{ project.color }}" href="{{ project.call_to_action.link }}">{{ project.call_to_action.text }} &rarr;</a></div></li>
-			{% endif %}
-		</ul>
-	{% endfor %}
+                    {% if project.call_to_action %}
+                        <li class="pricing-cta"><div class="button"><a style="background: {{ project.color }}" href="{{ project.call_to_action.link }}">{{ project.call_to_action.text }} &rarr;</a></div></li>
+                    {% endif %}
+                </ul>
+            {% endfor %}
+        </div>
+
+       <link rel="stylesheet" href="/css/pricing.css"/>
+
+        {% if page.faq %}
+            <h2>FAQ</h2>
+            <dl class="faq">
+                {% for item in page.faq %}
+                    <div>
+                        <dt>{{ item.question }}</dt>
+                        <dd>{{ item.answer }}</dd>
+                    </div>
+                {% endfor %}
+            </dl>
+        {% endif %}
+	</div>
 </div>
-
-{% if page.faq %}
-	<h2>FAQ</h2>
-	<dl class="faq">
-		{% for item in page.faq %}
-			<div>
-				<dt>{{ item.question }}</dt>
-				<dd>{{ item.answer }}</dd>
-			</div>
-		{% endfor %}
-	</dl>
-{% endif %}

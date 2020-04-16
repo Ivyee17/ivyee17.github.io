@@ -2,17 +2,41 @@
 title: Contact
 heading: Get in touch today
 description: We'd love to help you improve your sales.
-
+layout: mydefault
 map:
-  latitude: -45.8787605
-  longitude: 170.5027976
-  address: "1 George Street, Dunedin, New Zealand"
+  latitude: 121.409403
+  longitude: 31.227337
+  address: "No.5 Dormitory, 3663, North Zhongshan Rd., Putuo, Shanghai, China"
   zoom: 13
 ---
-<div class="map" id="map"></div>
 
 
-<div class="contact-box">
+<div id="wrapper">
+	<!-- Header -->
+	<header id="header">
+		<h1>Call Me</h1>
+		<p>Send me suggestions if you have interesting idea.</p>
+	</header>
+
+
+
+
+	<!-- Main -->
+		<div id="main">
+		<div id="intro" class="main">
+	<div class="spotlight">
+		<div class="content">
+			<header class="major">
+				<h2>Suggestions? Well, I'd like to call it inspiration.</h2>
+			</header>
+			<p>If having any interesting research ideas, interesting experiences, shared lives, or even suggestions for blogs, you can communicate with me by just filling a simple form.</p>
+
+		</div>
+	</div>
+
+
+
+	<div class="contact-box">
 	<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
 		<input type="hidden" name="_to" value="support@example.com" />
 		<input type="text" name="_gotcha" style="display: none;">
@@ -34,8 +58,14 @@ map:
 		<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
 
 		<h3 class="editable">Email</h3>
-		<p><a href="mailto:support@example.com">support@example.com</a></p>
+		<p><a href="mailto:whwu17@foxmail.com">whwu17@foxmail.com</a></p>
 	</div>
+	</div>
+		</div>
+
+</div>
+
+</section>
 </div>
 
 <script type="text/javascript">
