@@ -1,0 +1,58 @@
+{% include essay-page/base_path %}
+
+{% if page.author_profile or layout.author_profile or page.sidebar %}
+<div class="sidebar">
+  <!-- use 'sticky' class to stick -->
+  {% if page.author_profile or layout.author_profile %}{% include essay-page/author-profile.html %}{% endif %}
+  {% if page.sidebar %}
+  {% for s in page.sidebar %}
+  {% if s.image %}
+  <img src={% if s.image contains "://" %} "{{ s.image }}" {% else %} "{{ s.image | prepend: " /images" | prepend:
+    essay-page/base_path }}" {% endif %} alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+  {% endif %}
+  {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
+  {% if s.text %}{{ s.text | markdownify }}{% endif %}
+  {% endfor %}
+  {% if page.sidebar.nav %}
+  {% include nav_list nav=page.sidebar.nav %}
+  {% endif %}
+  {% endif %}
+  <p>Latest Posts</p>
+
+  <div>
+    {% for post in site.posts limit:3 %}
+    // post-card
+    <div class="card">
+      {% if post.image %}
+      <div class="card-image">
+        <img src="{{ post.image }}" alt="{{ post.title }}">
+      </div>
+      {% else %}
+      <header class="card-header">
+        <a class="card-header-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
+      </header>
+      {% endif %}
+      <div class="card-content">
+        <div class="content">
+          {% if post.image %}
+          <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
+          {% endif %}
+          {% if post.summary %}
+          {{ post.summary | markdownify }}
+          {% else %}
+          <p>{{ post.excerpt }}</p>
+          {% endif %}
+        </div>
+        <div class="has-text-centered">
+          <a href="{{ site.baseurl }}{{ post.url }}" class="button is-primary">Read more</a>
+        </div>
+      </div>
+      <footer class="card-footer">
+        <p class="card-footer-item">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
+      </footer>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
+{% endif %}

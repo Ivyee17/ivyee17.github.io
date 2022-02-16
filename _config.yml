@@ -1,7 +1,7 @@
 # ----
 # Site
 
-title: "Fairy's Home"
+title: "Wenhan's Home"
 url: "https://fairy17.github.io/"
 baseurl:
 google_analytics_key:
@@ -9,12 +9,48 @@ google_maps_javascript_api_key:
 disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo:  "/images/logo.svg"   # must have! Do like this: /images/siteicon.png
+logo:  "/images/essay-page/profile.png"   # must have! Do like this: /images/siteicon.png
 description:
+
+# Site Author
 author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
+  name             : "Wu Wenhan"
+  avatar           : "essay-page/profile.png"
+  bio              : "Student"
+  location         : "East China Normal <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;University"
+  employer         :
+  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  googlescholar    : "https://scholar.google.com/citations?user=NBSeJLkAAAAJ&hl=en&oi=sra"
+  email            :  "1020645987@qq.com"
+  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  uri              :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : "ivyee17"
+  google_plus      :
+  keybase          :
+  instagram        :
+  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  lastfm           :
+  linkedin         : "https://www.linkedin.cn/injobs/in/wu-wenhan-52453a206"
+  orcid            : "http://orcid.org/yourorcidurl"
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  steam            :
+  tumblr           :
+  twitter          : # "replacethistwitterhandle"
+  vine             :
+  weibo            : "weibo.com"
+  xing             :
+  youtube          : "youtube.com"
+  wikipedia        :
+
+
 social:
   name: Hydra Template
   links:
@@ -28,22 +64,44 @@ Timezone: Etc/UTC
 collections:
   staff_members:
     _hide_content: true
-
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  essays:
+    output: true
+    permalink: /:collection/:title/
+  
 paginate: 10
 paginate_path: "/blog/:num/"
 permalink: pretty
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
       layout: "post"
       _options:
         content:
           width: 1500
           height: 2500
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: essay-page/single
+      author_profile: true
+      share: true
+      comments: true
+  - scope:
+      path: ""
+      type: essays
+    values:
+      layout: essay-page/single-essay
+      author_profile: true
+      share: true
+      comments: true
+
 
 jekyll-archives:
   enabled:

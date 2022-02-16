@@ -1,0 +1,17 @@
+---
+layout: essay-page/archive
+title: "Essays"
+permalink: /essays/
+author_profile: true
+---
+
+Essays reading in seminars included.
+
+{% include essay-page/base_path %}
+{% for post in site.essays reversed %}
+  
+    
+
+  {% include essay-page/archive-single-essay.html %}
+
+{% endfor %} 
