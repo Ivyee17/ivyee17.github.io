@@ -1,0 +1,32 @@
+---
+layout: essay-page/archive
+permalink: /projects/
+title: "Projects"
+author_profile: true
+---
+
+
+
+
+{% include essay-page/base_path %}
+<div class="gitcards" data-user="ivyee17"></div>
+
+<div id="allrepos">
+
+</div>
+<script type="text/javascript">
+  async function getAllRepos() {
+    let url = "https://api.github.com/users/" + "ivyee17" + "/repos";
+    let response = await fetch(url);
+    let info = await response.json();
+    console.log(info);
+    for (var e of info) {
+      console.log("<div class=\"gitcards\" style=\"float: left;\" data-user=\"ivyee17\" data-repo=\"" + e.name + "\"></div>");
+      var el = document.getElementById("allrepos");
+      el.innerHTML += "<div class=\"gitcards\" data-user=\"ivyee17\" data-repo=\"" + e.name + "\"></div>";
+    }
+    $("#allrepos").append("<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/gitcards.css\"></link><script type=\"text/javascript\" src=\"../assets/js/jquery-1.10.1.min.js\"><\/script><script type=\"text/javascript\" src=\"../assets/js/gitcards.js\"><\/script>"); 
+    
+  } 
+  getAllRepos();
+ </script>

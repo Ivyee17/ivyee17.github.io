@@ -3,56 +3,38 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
 <div class="sidebar">
   <!-- use 'sticky' class to stick -->
-  {% if page.author_profile or layout.author_profile %}{% include essay-page/author-profile.html %}{% endif %}
-  {% if page.sidebar %}
-  {% for s in page.sidebar %}
-  {% if s.image %}
-  <img src={% if s.image contains "://" %} "{{ s.image }}" {% else %} "{{ s.image | prepend: " /images" | prepend:
-    essay-page/base_path }}" {% endif %} alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-  {% endif %}
-  {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-  {% if s.text %}{{ s.text | markdownify }}{% endif %}
-  {% endfor %}
-  {% if page.sidebar.nav %}
-  {% include nav_list nav=page.sidebar.nav %}
-  {% endif %}
-  {% endif %}
-  <p>Latest Posts</p>
-
+  {% if page.author_profile or layout.author_profile %}{% include essay-page/author-profile.html %}
   <div>
+    <p>Latest Posts</p>
     {% for post in site.posts limit:3 %}
-    // post-card
-    <div class="card">
+
+    <div style="border-top: 1.5pt solid black;padding-top: 15px;">
+      <style>
+        .self{
+          margin: 0pt;
+          font-size: 10pt;
+        }
+      </style>
       {% if post.image %}
-      <div class="card-image">
-        <img src="{{ post.image }}" alt="{{ post.title }}">
-      </div>
-      {% else %}
-      <header class="card-header">
-        <a class="card-header-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
-      </header>
+      <img src="{{ post.image }}" alt="{{ post.title }}">
       {% endif %}
-      <div class="card-content">
-        <div class="content">
-          {% if post.image %}
-          <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
-          {% endif %}
-          {% if post.summary %}
-          {{ post.summary | markdownify }}
-          {% else %}
-          <p>{{ post.excerpt }}</p>
-          {% endif %}
-        </div>
-        <div class="has-text-centered">
-          <a href="{{ site.baseurl }}{{ post.url }}" class="button is-primary">Read more</a>
-        </div>
-      </div>
-      <footer class="card-footer">
-        <p class="card-footer-item">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
-      </footer>
+      <div class="self" href="{{ site.baseurl }}{{ post.url }}"><a class="self" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></div>     
+      <p class="self" >{{ post.date | date: "%b %-d, %Y" }}</p>
+      {% if post.summary %}
+      <p class="self" >{{ post.summary | markdownify }}</p>
+      {% else %}
+      <p class="self" >{{ post.excerpt }}</p>
+      {% endif %}
+      <!-- <a class="self" href="{{ site.baseurl }}{{ post.url }}">Read more</a>  -->
+        
     </div>
     {% endfor %}
   </div>
+  {% endif %}
+  
+
+
+
 
 </div>
 {% endif %}

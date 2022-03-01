@@ -1,6 +1,6 @@
 ---
 collection: essays
-title: "Is BERT Really Robust? A Strong Baseline for Natural Language Attack on Text Classification and Entailment"
+title: "Example: Is BERT Really Robust? A Strong Baseline for Natural Language Attack on Text Classification and Entailment"
 highlight: 'A method to attack bert. May multi future'
 paperurl: 'https://ivyee17.github.io/files/bert-attack.pdf'
 noteurl: 'https://ivyee17.github.io/files/bert-attack.docx'
@@ -14,6 +14,7 @@ more:
 date: 2021-09-01
 modified: 2022-02-16
 conference: ucl2021
+tags: ucl1
 ---
 
 markdown here.
