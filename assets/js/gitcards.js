@@ -48,16 +48,17 @@
 					element.children('.gc-loading').remove();
 					// data = data.data;
 					desc = '';
-					if (!data.description) {
-						desc = 'nodesc';
+					if (data.description==null) {
+						desc = 'No description.';
+					}else{
+						desc=data.description
 					}
-					element.append('<div class="gc-repo ' + desc + '">' + svg_repo + '<a href="' + data.html_url + '" target="_blank"><span class="gc-reponame">' + data.full_name + '</span><span class="gc-repodesc">' + data.description + '</span></a></div><div class="gc-status"><a href="' + data.html_url + '" target="_blank">' + svg_star + '<span>Star ' + data.stargazers_count + '</span></a><a href="' + data.html_url + '" target="_blank">' + svg_fork + '<span>Fork ' + data.forks_count + '</span></a><a href="' + data.html_url + '/archive/master.zip" target="_blank"><span>Download ZIP</span></a></div>');
+					element.append('<div class="gc-repo ' + desc + '">' + svg_repo + '<a href="' + data.html_url + '" target="_blank"><span class="gc-reponame">' + data.full_name + '</span><span class="gc-repodesc">' + desc + '</span></a></div><div class="gc-status"><a href="' + data.html_url + '" target="_blank">' + svg_star + '<span>Star ' + data.stargazers_count + '</span></a><a href="' + data.html_url + '" target="_blank">' + svg_fork + '<span>Fork ' + data.forks_count + '</span></a><a href="' + data.html_url + '/archive/master.zip" target="_blank"><span>Download ZIP</span></a></div>');
 				});
 			}
 		});
 
 		function github_user(username, callback) {
-			console.log("bbb")
 			$.getJSON('https://api.github.com/users/' + username + '', callback);
 		}
 
@@ -65,4 +66,4 @@
 			//https://api.github.com/repos/{owner}/{repo}
 			$.getJSON('https://api.github.com/repos/' + username + '/' + repo + '', callback);
 		}
-	  
+	
