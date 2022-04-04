@@ -145,3 +145,7 @@ _comments:
   new_window: Open link in new window
 
 #theme: jekyll-theme-leap-day
+
+sass:
+  sass_dir: _sass
+  style: compressed

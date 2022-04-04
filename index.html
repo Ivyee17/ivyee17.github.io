@@ -1,338 +1,499 @@
 ---
-layout: mydefault
 description: Start your exploration from here!
 title: Welcome!
 # abstract: More to explain here.
 # url: index-sub/index.html
 # background-pic: start-page-2.jpg
 ---
-<!-- Header -->
-<style>
-    .cover {
-        color: rgb(241, 241, 241);
-        height: 100%;
-        background: url("/images/start-page/start-page-2.jpg") no-repeat center center fixed;
-        width: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        position: absolute;
-    }
-    .cover-black{
-        background: #00000090;
+<!doctype html>
+<html>
 
-        height: 100%;
-        width: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        position: absolute;
-    }
+<head>
 
-    /**
-     * clock css
-     */
-    .seconds {
-        width: 40px;
-        height: 40px;
-        top: 280px;
-        left: 280px;
-        position: absolute;
-        text-align: center;
-        line-height: 40px;
-        font-size: 18pt;
-        border-radius: 50%;
-        background-color: rgba(81, 81, 81, 0.2); }
+    <title>Fairy's Blog</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-    .minutes {
-        width: 100px;
-        height: 100px;
-        top: 250px;
-        left: 250px;
-        position: absolute;
-        text-align: center;
-        line-height: 100px;
-        font-size: 52pt;
-        border-radius: 50%;
-        background-color: rgba(126, 126, 126, 0.7); }
+    <!-- design blocks includes -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/2.0.1/css/froala_blocks.min.css">
 
-    .hours {
-        width: 300px;
-        height: 300px;
-        top: 150px;
-        left: 150px;
-        position: absolute;
-        text-align: center;
-        line-height: 280px;
-        font-size: 133pt;
-        border-radius: 50%;
-        background-color: rgba(181, 181, 181, 0.4); }
+    <link rel="stylesheet" href="./assets/css/first-page.css" />
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-    .site-name {
-        /*filter: none;*/
-        max-width: 940px;
-        padding: 0 10px;
-        margin: 0 auto;
-        text-align: right;
-        position: relative;
-        height: 100%; }
 
-    .site-name__inner {
 
-        position: absolute;
-        top: 150px;
-        width: 100%;
-        right: 0;
-        width: 400px; }
+</head>
 
-    .site-name__inner .name {
-        font-size: 100px;
+<body>
 
-        font-family: 'Source Sans Pro', sans-serif; }
-
-    .site-name__inner .desc {
-        font-size: 20px;
-        font-family: 'Open Sans', sans-serif; }
-
-    .site-name__inner .btn {
-        padding: 10px 30px;
-        border: 2px solid #fff;
-        display: inline-block;
-        margin-top: 100px;
-        border-radius: 3px;
-        cursor: pointer; }
-
-</style>
-<!--<link rel="stylesheet" href="../css/index-page.css">-->
-<header class="cover" >
-</header>
-<div class="cover-black"/>
-<div class="clock"></div>
-<div class='hours'></div>
-<div class='seconds'></div>
-<div class='minutes'></div>
-<div class="site-name">
-    <div class="site-name__inner">
-        <div class="name">{{page.title}}</div>
-        <div class="desc">
-            {{page.description}}
-        </div>
-        <div class="btn" onclick="window.open('index-stellar/index.html')">Enjoy</div>
-    </div>
-</div>
-<script>
-    setInterval(function () {
-        var seconds = new Date().getSeconds();
-        var sdegree = seconds * 6 + 270;
-        seconds = ("0" + seconds).slice(-2);
-        var secondSel = document.querySelector(".seconds");
-
-        secondSel.style.transform = "rotate(" + sdegree + "deg) translate(160px) rotate(-" + sdegree + "deg)";
-        secondSel.innerHTML = seconds;
-
-        var minutes = new Date().getMinutes();
-        var mdegree = minutes * 6 + 270;
-        var minutesSel = document.querySelector(".minutes");
-        minutes = ("0" + minutes).slice(-2);
-
-        minutesSel.style.transform = "rotate(" + mdegree + "deg) translate(181px) rotate(-" + mdegree + "deg)";
-        minutesSel.innerHTML = minutes;
-
-        var hours = new Date().getHours();
-        var hoursSel = document.querySelector(".hours");
-
-        if (hours > 12) {
-            hours = hours - 12;
+    <!-- Header -->
+    <style>
+        .cover {
+            color: rgb(241, 241, 241);
+            height: 100%;
+            background: url("/images/start-page/start-page-2.jpg") no-repeat center center fixed;
+            width: 100%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            position: absolute;
         }
 
-        hours = ("0" + hours).slice(-2);
+        .cover-black {
+            background: #00000090;
 
-        hoursSel.innerHTML = hours;
-    }, 1000);
-</script>
+            height: 100%;
+            width: 100%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            position: absolute;
+        }
+
+        /**
+     * clock css
+     */
+
+        .seconds {
+            width: 40px;
+            height: 40px;
+            top: 280px;
+            left: 280px;
+            position: absolute;
+            text-align: center;
+            line-height: 40px;
+            font-size: 18pt;
+            border-radius: 50%;
+            background-color: rgba(81, 81, 81, 0.2);
+        }
+
+        .minutes {
+            width: 100px;
+            height: 100px;
+            top: 250px;
+            left: 250px;
+            position: absolute;
+            text-align: center;
+            line-height: 100px;
+            font-size: 52pt;
+            border-radius: 50%;
+            background-color: rgba(126, 126, 126, 0.7);
+        }
+
+        .hours {
+            width: 300px;
+            height: 300px;
+            top: 150px;
+            left: 150px;
+            position: absolute;
+            text-align: center;
+            line-height: 280px;
+            font-size: 133pt;
+            border-radius: 50%;
+            background-color: rgba(181, 181, 181, 0.4);
+        }
+
+        @media screen and (max-width: 960px) {
+
+            .seconds,
+            .minutes,
+            .hours {
+                display: none;
+            }
+        }
+
+        /* clock css end */
+        .site-name {
+            max-width: 940px;
+            padding: 0 10px;
+            margin: 0 auto;
+            text-align: right;
+            position: relative;
+            height: 100%;
+        }
+
+        .site-name__inner {
+
+            position: absolute;
+            top: 150px;
+            width: 100%;
+            right: 0;
+            width: 400px;
+        }
+
+        .site-name__inner .name {
+            font-size: 100px;
+
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .site-name__inner .desc {
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .site-name__inner .btn {
+            padding: 10px 30px;
+            border: 2px solid #fff;
+            display: inline-block;
+            margin-top: 100px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        div::-webkit-scrollbar {
+            width: 0;
+        }
+
+        #main {
+            scroll-snap-type: block mandatory;
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+            height: 200vh;
+            background-color: #fff;
+        }
+
+        section {
+            height: 100vh;
+            scroll-snap-align: start;
+            flex: none;
+            background: gray;
+            overflow-y: scroll;
+        }
+        section::-webkit-scrollbar {
+            width: 0;
+        }
+    </style>
 
 
+    <!--<link rel="stylesheet" href="../css/index-page.css">-->
+    <header class="cover">
+    </header>
+    <div class="cover-black"></div>
+    <div class="clock"></div>
+    <div class='hours'></div>
+    <div class='seconds'></div>
+    <div class='minutes'></div>
+    <div class="site-name">
+        <div class="site-name__inner">
+            <div class="name">{{page.title}}</div>
+            <div class="desc">
+                {{page.description}}
+            </div>
+            <div class="btn" onclick="window.open('index-stellar/index.html')">Enjoy</div>
+        </div>
+    </div>
+    <script>
+        setInterval(function () {
+            var seconds = new Date().getSeconds();
+            var sdegree = seconds * 6 + 270;
+            seconds = ("0" + seconds).slice(-2);
+            var secondSel = document.querySelector(".seconds");
 
-<div id="wrapper">
+            secondSel.style.transform = "rotate(" + sdegree + "deg) translate(160px) rotate(-" + sdegree + "deg)";
+            secondSel.innerHTML = seconds;
+
+            var minutes = new Date().getMinutes();
+            var mdegree = minutes * 6 + 270;
+            var minutesSel = document.querySelector(".minutes");
+            minutes = ("0" + minutes).slice(-2);
+
+            minutesSel.style.transform = "rotate(" + mdegree + "deg) translate(181px) rotate(-" + mdegree + "deg)";
+            minutesSel.innerHTML = minutes;
+
+            var hours = new Date().getHours();
+            var hoursSel = document.querySelector(".hours");
+
+            if (hours > 12) {
+                hours = hours - 12;
+            }
+
+            hours = ("0" + hours).slice(-2);
+
+            hoursSel.innerHTML = hours;
+        }, 1000);
+    </script>
+
+
+    <div style="height: 100vh;"></div>
     <!-- Nav -->
-    <nav id="nav">
+    <nav id="nav" style="position:sticky;position: -webkit-sticky;top:0">
         <ul>
             <li><a href="#intro" class="active">Home</a></li>
-            <li><a href="#first">Project</a></li>
-            <li><a href="#second">Blog</a></li>
-            <li><a href="#cta">About</a></li>
-            <li><a href="#cta">Design</a></li>
-            <li><a href="#cta">Teacher</a></li>
-            <li><a href="#cta">Literature & Cooking</a></li>
+            <li><a href="#academic">Academic</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#lab">Lab</a></li>
+            <li><a href="#project">Design</a></li>
+            <li><a href="#none">Teacher</a></li>
+            <li><a href="#second">Literature & Cooking</a></li>
         </ul>
     </nav>
     <!-- Main -->
-    <div id="main">
-        <!-- Introduction -->
-        <section id="intro" class="main">
-            <div class="spotlight">
-                <div class="content">
-                    <header class="major">
-                        <h2>Hi</h2>
-                    </header>
-                    <p>Welcome to my homepage. Hope you'll have a nice experience here.</p>
-                    <ul class="actions">
-                        <li><a href="about" class="button">About Myself</a></li>
-                    </ul>
+
+    <!-- Introduction -->
+    <section id="intro" class="main">
+        <div class="container wow fadeInUp" data-wow-duration="2s" style="background:#ffffffcc;padding:40px">
+            <div class="row text-center justify-content-center wow fadeInLeft" data-wow-delay="2s"
+                data-wow-duration="2s">
+                <div class="col-8">
+                    <h1 class="major">Hi, welcome to my personal page!</h1>
+                    <p class="lead">Hope you'll have a nice experience here.</p>
                 </div>
-                <span class="image"><img src="/staff_members/wuwenhan.jpg" alt="" /></span>
             </div>
-        </section>
 
-        <section id="academic" class="main">
-            <div class="spotlight">
-                <span class="icon solid major style1 fa-code"></span>
-                <div class="content">
-                    <header class="major">
-                        <h2>Academic Home</h2>
-                    </header>
-                    <p>Here's my academic home, including the essays, publications and github repos.</p>
-                    <ul class="actions">
-                        <li><a href="academic" class="button">View Here</a></li>
-                    </ul>
+            <div class="row-100"></div>
+
+            <div class="row justify-content-center text-left wow fadeInRight" data-wow-delay="2s"
+                data-wow-duration="2s">
+
+                <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2 m-auto">
+                    <img alt="image" class="image img-fluid rounded-circle"
+                        src="https://github.com/froala/design-blocks/raw/dev/src/imgs/logo.png">
                 </div>
-               
-            </div>
-        </section>
 
-        <section id="lab" class="main">
-            <div class="spotlight">
-                <div class="content">
-                    <header class="major">
-                        <h2>Laboratory</h2>
-                    </header>
-                    <p>Laboratory information is recorded here.</p>
-                    <ul class="actions">
-                        <li><a href="lab" class="button">View with Password</a></li>
-                    </ul>
+                <div class="col-12 col-md-8 ml-auto mr-auto mt-4 mt-md-0">
+                    <p class="h3 mt-4 mt-lg-5"><strong>Wu Wenhan</strong></p>
+                    <p><em>Student @ ECNU</em></p>
+                    <p class="lead">
+                        "Life is a journey, not a checklist."
+                    </p>
                 </div>
-                <span class="icon solid major style1 fa-code"></span>
             </div>
-        </section>
 
-<!-- nouse  -->
-        <section id="blog" class="main special">
-            <header class="major">
-                <h2>Blog</h2>
-            </header>
-            {% include list-posts.html %}
-            <footer class="major">
-                <ul class="actions special">
-                    <li><a href="blog" class="button">See all blog</a></li>
-                </ul>
-            </footer>
-        </section>
+        </div>
 
-        <section id="project" class="main special">
-            <header class="major">
-                <h2>Project</h2>
-            </header>
-            <ul class="features">
-                <li>
-                    <span class="icon solid major style1 fa-code"></span>
-                    <h3>Github</h3>
-                    <p>Github is my code sharing platform. You can view my projects on Github, such as SRT.</p>
-                </li>
-            </ul>
-            <footer class="major">
-                <ul class="actions special">
-                    <li><a href="lab" class="button">See all Projects</a></li>
-                </ul>
-            </footer>
-        </section>
+    </section>
 
-        <!--Blog-->
-        
-       
+    <style>
+        section#intro * {
+            color: black;
+        }
+
+        section#intro {
+            /* background: #fff; */
+            background-image: url(https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: screen;
+
+        }
+
+        section#academic h1,
+        section#lab h1 {
+            color: white;
+
+            font-weight: 600;
+
+        }
+
+        section#academic strong,
+        section#lab strong {
+            color: white;
+            font-weight: 600;
+        }
+
+        .lead {
+
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: white;
+
+        }
+
+        section {
+            padding-top: 90px;
+        }
 
 
-            <section id="second" class="main special">
-                <header class="major">
-                    <h2>Statistic</h2>
-                    <p>Here's my statistic data. </p>
-                </header>
-                <ul class="statistics">
-                    <li class="style1">
-                        <span class="icon solid fa-code-branch"></span>
-                        <strong>5,120</strong> Etiam
-                    </li>
-                    <li class="style2">
-                        <span class="icon fa-folder-open"></span>
-                        <strong>8,192</strong> Magna
-                    </li>
-                    <li class="style3">
-                        <span class="icon solid fa-signal"></span>
-                        <strong>2,048</strong> Tempus
-                    </li>
-                    <li class="style4">
-                        <span class="icon solid fa-laptop"></span>
-                        <strong>4,096</strong> Aliquam
-                    </li>
-                    <li class="style5">
-                        <span class="icon fa-gem"></span>
-                        <strong>1,024</strong> Nullam
-                    </li>
-                </ul>
-                <p class="content">Content.</p>
-                <footer class="major">
-                    <ul class="actions special">
-                        <li><a href="elements" class="button">Learn More</a></li>
-                    </ul>
-                </footer>
-            </section>
 
-    </div>
+        section#academic {
 
-<!-- Footer -->
-    <footer id="footer">
-        <section>
-            <h2>Last</h2>
-            <p>Woo, you've reached the end! If you haven't found what you need, contact me with following methods.</p>
-            <ul class="actions">
-                <li><a href="contact" class="button">Write to us</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Contact Me</h2>
-            <dl class="alt">
-                <dt>Address</dt>
-                <dd>East Chian Normal University</dd>
-                <dt>Phone</dt>
-                <dd>(+86) 18516523459</dd>
-                <dt>Email</dt>
-                <dd><a href="mailto://whwu17@foxmail.com">whwu17@foxmail.com</a></dd>
-            </dl>
-            <ul class="icons">
-                <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-                <li><a href="http://www.github.com/ivyee17" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-                <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-                <li>
-                    <a href="#" class="icon brands fa-dribbble alt">
-                        <span class="label">Design</span></a>
-                </li>
-            </ul>
-        </section>
-        <p class="copyright">&copy; Wu Wenhan. Design: <a href="https://html5up.net">HTML5 UP</a>.	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license).</p>
+
+            background: #666;
+            background-image: url(https://images.unsplash.com/photo-1648146037375-f0a8b7735ca6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80%20870w,);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: screen;
+
+        }
+
+        section#lab {
+
+            background: #666;
+            background-image: url(https://images.unsplash.com/photo-1592829016842-156c305ecc7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: screen;
+        }
+    </style>
+    <section id="academic" class="main">
+        <div class="p-4" style="background:#0007">
+            <div class="container">
+                <div class="row text-left align-items-center">
+                    <div class="col-10 col-sm-6 m-auto m-lg-0 col-lg-4 wow fadeInLeft" data-wow-duration="4s">
+                        <img alt="image" class="img-fluid"
+                            src="https://raw.githubusercontent.com/froala/design-blocks/dev/src/imgs/draws/opened.svg">
+                    </div>
+
+                    <div class="col-12 col-lg-7 offset-lg-1 pt-4 pt-lg-0">
+                        <div class="wow fadeInDown" data-wow-duration="2s">
+                            <h1>Academic Home</h1>
+                            <p class="lead">Here's my academic home, including the essays, publications and github
+                                repos.
+                            </p>
+                        </div>
+                        <div class="row mt-5 wow fadeInUp" data-wow-duration="2s">
+                            <div class="col-12 col-sm-6">
+                                <h3><strong>GitHub</strong></h3>
+                                <p class="lead">Academic page also provides my Github introduction, which is used as
+                                    code cooperation platform. Feel free to get inspirations from those projects.</p>
+                            </div>
+
+                            <div class="col-12 col-sm-6 pt-3 pt-sm-0">
+                                <h3><strong>Essay / Blog</strong></h3>
+                                <p class="lead">Several tips and tricks are recorded here to prevent from felling into
+                                    the trouble again. Essays are also linked here for understanding and communications.
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 pt-sm-4 wow fadeInLeft"
+                                style=" display: flex; justify-content: flex-end;padding-right: 40px;"
+                                data-wow-delay="1s" data-wow-duration="4s">
+                                <ul class="actions">
+                                    <li><a href="academic" class="button">View Here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="lab" class="main">
+        <svg width="100%" height="100%" style="position: absolute;margin-top: -90px;" viewBox="0 0 100 150">
+            <path d="M20 0, T 75 10, 45 150, L200 150,L200 0" stroke-width="3" fill="#f4f7fecc"></path>
+        </svg>
+        <div class="container " style="padding-top: 60px;">
+            <div class="row align-items-center ">
+                <div class="col-md-8 col-lg-5">
+                    <img alt="image" class="fdb-icon" width="50px"
+                        src="https://raw.githubusercontent.com/froala/design-blocks/dev/src/imgs/icons/github.svg"
+                        style="margin-bottom: 20px;">
+                    <h1 class="wow backInLeft">Lab</h1>
+                    <p class="lead wow backInLeft" data-wow-duration="1.5s">Visit my lab info here with password.</p>
+                    <div class="wow backInLeft" data-wow-duration="2s">
+                        <ul class="actions">
+                            <li><a href="lab" class="button">View With Password</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-10 m-auto col-md-6 pt-6 pt-md-0" style="padding-left: 183px;">
+                    <img alt="image" class="img-fluid rounded-0"
+                        src="https://raw.githubusercontent.com/froala/design-blocks/dev/src/imgs/draws/chat.svg"
+                        style="width: 50%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        footer * {
+            color: black;
+            font-weight: 500;
+            text-decoration-line: none;
+        }
+
+        footer p,footer a {
+            margin: 0;
+            /* padding-left: 0; */
+        }
+    </style>
+
+    <footer class="fdb-block footer-large">
+        <div class="container">
+            <div class="row align-items-top text-center">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 text-sm-left">
+                    <h3><strong>Contact</strong></h3>
+                    <nav class="nav flex-column-2">
+                        <p class="nav-link col-3" href="https://www.froala.com">Address</p>
+                        <p class="nav-link col-9">East China Normal University</p>
+                        <p class="nav-link col-3" href="https://www.froala.com">Phone</p>
+                        <p class="nav-link col-9">(+86) 18516523459</p>
+                        <p class="nav-link col-3" href="https://www.froala.com">Email</p>
+                        <a class="nav-link col-9" href="mailto://whwu17@foxmail.com">whwu17@foxmail.com</a>
+                    </nav>
+                </div>
+
+
+
+
+                <div class="col-12 col-md-4 col-lg-3 text-md-left mt-5 mt-md-0">
+                    <h3><strong>Write to us</strong></h3>
+                    <p>Welcome to communicate with me! Feel free to contack me with following link. </p>
+                    <br>
+                    <a href="contact"><button type="submit" class="btn btn-dark">Write to us</button></a>
+
+                </div>
+
+                <div class="col-12 col-lg-2 ml-auto text-lg-left mt-4 mt-lg-0">
+                    <h3><strong>Follow Us</strong></h3>
+                    <p class="lead">
+                        <a href="https://www.froala.com" class="mx-2"><i class="fab fa-twitter"
+                                aria-hidden="true"></i></a>
+                        <a href="https://www.froala.com" class="mx-2"><i class="fab fa-facebook"
+                                aria-hidden="true"></i></a>
+                        <a href="https://www.froala.com" class="mx-2"><i class="fab fa-instagram"
+                                aria-hidden="true"></i></a>
+                        <a href="https://www.froala.com" class="mx-2"><i class="fab fa-pinterest"
+                                aria-hidden="true"></i></a>
+                        <a href="https://www.froala.com" class="mx-2"><i class="fab fa-google"
+                                aria-hidden="true"></i></a>
+                        <a href="https://github.com/ivyee17" class="mx-2"><i class="fab fa-github"
+                                aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+            <p class="row-70" <div class="row mt-3">
+            <div class="col text-center">
+                &copy; Wu Wenhan. Inspired by <a href="www.froala.com/design-blocks">design-blocks</a>.
+                Template based on <a href="https://html5up.net">Stellar</a> and jekyll clean theme. Animations export
+                from
+                wow.js and animate.js under Bootstrap license. Free for personal and commercial use under the CCA 3.0
+                and
+                MIT license.
+            </div>
+        </div>
+        </div>
     </footer>
 
+    <script src="assets/js/scrollReveal.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
-</div>
+    <!-- Scripts -->
+    <script src="./index-stellar/assets/js/jquery.min.js"></script>
+    <script src="./index-stellar/assets/js/jquery.scrollex.min.js"></script>
+    <script src="./index-stellar/assets/js/jquery.scrolly.min.js"></script>
+    <script src="./index-stellar/assets/js/browser.min.js"></script>
+    <script src="./index-stellar/assets/js/breakpoints.min.js"></script>
+    <script src="./index-stellar/assets/js/util.js"></script>
+    <script src="./index-stellar/assets/js/main.js"></script>
 
-<!-- Scripts -->
-<script src="/index-stellar/assets/js/jquery.min.js"></script>
-<script src="/index-stellar/assets/js/jquery.scrollex.min.js"></script>
-<script src="/index-stellar/assets/js/jquery.scrolly.min.js"></script>
-<script src="/index-stellar/assets/js/browser.min.js"></script>
-<script src="/index-stellar/assets/js/breakpoints.min.js"></script>
-<script src="/index-stellar/assets/js/util.js"></script>
-<script src="/index-stellar/assets/js/main.js"></script>
+</body>
 
+</html>
