@@ -66,8 +66,25 @@ permalink: /lab/
 <header class="cover">
 </header>
 <!-- <div class="cover-black"/> -->
-
-<div id="front-page" class="align-vertical shadow-ss" style="height:auto;width:40%">
+<style>
+    #front-page{
+        height:auto;
+        width:40%;
+    }
+    #info{
+            width:60%;
+        }
+    @media screen and (max-width:600px) {
+        #front-page{
+        width:90%;
+        height:auto;
+        }
+        #info{
+            width:90%;
+        }
+    }
+</style>
+<div id="front-page" class="align-vertical shadow-ss" >
     <div class="card" style="width:100%">
         <div class="card-header h5 p-3">
             Enter the key

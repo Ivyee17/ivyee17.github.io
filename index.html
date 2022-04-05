@@ -10,7 +10,7 @@ title: Welcome!
 
 <head>
 
-    <title>Fairy's Blog</title>
+    <title>Wenhan's Blog</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
@@ -34,7 +34,6 @@ title: Welcome!
 
 <body>
 
-    <!-- Header -->
     <style>
         .cover {
             color: rgb(241, 241, 241);
@@ -60,9 +59,7 @@ title: Welcome!
             position: absolute;
         }
 
-        /**
-     * clock css
-     */
+        /* clock css */
 
         .seconds {
             width: 40px;
@@ -113,44 +110,7 @@ title: Welcome!
         }
 
         /* clock css end */
-        .site-name {
-            max-width: 940px;
-            padding: 0 10px;
-            margin: 0 auto;
-            text-align: right;
-            position: relative;
-            height: 100%;
-        }
-
-        .site-name__inner {
-
-            position: absolute;
-            top: 150px;
-            width: 100%;
-            right: 0;
-            width: 400px;
-        }
-
-        .site-name__inner .name {
-            font-size: 100px;
-
-            font-family: 'Source Sans Pro', sans-serif;
-        }
-
-        .site-name__inner .desc {
-            font-size: 20px;
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        .site-name__inner .btn {
-            padding: 10px 30px;
-            border: 2px solid #fff;
-            display: inline-block;
-            margin-top: 100px;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-
+     
         div::-webkit-scrollbar {
             width: 0;
         }
@@ -160,40 +120,44 @@ title: Welcome!
             display: flex;
             flex-direction: column;
             overflow-y: scroll;
+            overflow-x: hidden;
             height: 200vh;
             background-color: #fff;
         }
 
         section {
             height: 100vh;
-            scroll-snap-align: start;
+            scroll-snap-align: center;
             flex: none;
             background: gray;
             overflow-y: scroll;
+            overflow-x: hidden;
         }
+
         section::-webkit-scrollbar {
             width: 0;
         }
     </style>
 
 
-    <!--<link rel="stylesheet" href="../css/index-page.css">-->
-    <header class="cover">
-    </header>
+    <div class="cover"></div>
     <div class="cover-black"></div>
-    <div class="clock"></div>
-    <div class='hours'></div>
-    <div class='seconds'></div>
-    <div class='minutes'></div>
-    <div class="site-name">
-        <div class="site-name__inner">
-            <div class="name">{{page.title}}</div>
-            <div class="desc">
-                {{page.description}}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6" style="margin-left: -75px;">
+                <div class='hours'></div>
+                <div class='seconds'></div>
+                <div class='minutes'></div>
             </div>
-            <div class="btn" onclick="window.open('index-stellar/index.html')">Enjoy</div>
+            <div class="col-sm-12 col-lg-6 d-flex justify-content-center align-items-end flex-column" style="height:100vh">
+                <div class="font-weight-bold" style="font-size: 50pt">Welcome!</div>
+                <div class="font-weight-normal" style="font-size: 20pt;">Start your exploration from here!</div>
+                <div class="button mt-4 mb-5 font-weight-bold">Enjoy</div>
+            </div>
         </div>
     </div>
+
+
     <script>
         setInterval(function () {
             var seconds = new Date().getSeconds();
@@ -226,7 +190,7 @@ title: Welcome!
     </script>
 
 
-    <div style="height: 100vh;"></div>
+    <!-- <div style="height: 100vh;"></div> -->
     <!-- Nav -->
     <nav id="nav" style="position:sticky;position: -webkit-sticky;top:0">
         <ul>
@@ -244,9 +208,8 @@ title: Welcome!
     <!-- Introduction -->
     <section id="intro" class="main">
         <div class="container wow fadeInUp" data-wow-duration="2s" style="background:#ffffffcc;padding:40px">
-            <div class="row text-center justify-content-center wow fadeInLeft" data-wow-delay="2s"
-                data-wow-duration="2s">
-                <div class="col-8">
+            <div class="row text-center justify-content-center wow fadeInLeft" data-wow-delay="2s" data-wow-duration="2s">
+                <div class="col">
                     <h1 class="major">Hi, welcome to my personal page!</h1>
                     <p class="lead">Hope you'll have a nice experience here.</p>
                 </div>
@@ -254,20 +217,21 @@ title: Welcome!
 
             <div class="row-100"></div>
 
-            <div class="row justify-content-center text-left wow fadeInRight" data-wow-delay="2s"
-                data-wow-duration="2s">
+            <div class="row justify-content-center text-left wow fadeInRight" data-wow-delay="2s" data-wow-duration="2s">
 
-                <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl-2 m-auto">
-                    <img alt="image" class="image img-fluid rounded-circle"
-                        src="./staff_members/wuwenhan.jpg">
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 m-auto">
+                    <img alt="image" class="image img-fluid rounded-circle" src="{{ site.author.avatar }}">
                 </div>
 
-                <div class="col-12 col-md-8 ml-auto mr-auto mt-4 mt-md-0">
-                    <p class="h3 mt-4 mt-lg-5"><strong>Wu Wenhan</strong></p>
-                    <p><em>Student @ ECNU</em></p>
+                <div class="col-12 col-md-8 ml-auto mr-auto mt-4 mt-md-0 mb-4">
+                    <p class="h3 mt-3"><strong>{{site.name}}</strong></p>
+                    <p class="mb-4"><em>{{site.position}}</em></p>
                     <p class="lead">
-                        "Life is a journey, not a checklist."
+                        {{site.slogen}}
                     </p>
+                    <ul class="actions">
+                        <li><a href="about" class="btn" style="border-color: #000;">See My Information</a></li>
+                    </ul>
                 </div>
             </div>
 
@@ -282,7 +246,7 @@ title: Welcome!
 
         section#intro {
             /* background: #fff; */
-            background-image: url(https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+            background-image: url(./images/self-bg.jfif);
             background-repeat: no-repeat;
             background-size: cover;
             background-blend-mode: screen;
@@ -321,7 +285,7 @@ title: Welcome!
 
 
             background: #666;
-            background-image: url(https://images.unsplash.com/photo-1648146037375-f0a8b7735ca6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80%20870w,);
+            background-image: url(./images/academic-bg.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-blend-mode: screen;
@@ -331,7 +295,7 @@ title: Welcome!
         section#lab {
 
             background: #666;
-            background-image: url(https://images.unsplash.com/photo-1592829016842-156c305ecc7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+            background-image: url(./images/lab-bg.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-blend-mode: screen;
@@ -341,16 +305,15 @@ title: Welcome!
         <div class="p-4" style="background:#0007">
             <div class="container">
                 <div class="row text-left align-items-center">
-                    <div class="col-10 col-sm-6 m-auto m-lg-0 col-lg-4 wow fadeInLeft" data-wow-duration="4s">
+                    <div class="col-4 m-auto m-lg-0 col-lg-4 wow fadeInLeft" data-wow-duration="4s">
                         <img alt="image" class="img-fluid"
-                            src="https://raw.githubusercontent.com/froala/design-blocks/dev/src/imgs/draws/opened.svg">
+                            src="./images/opened.svg">
                     </div>
 
-                    <div class="col-12 col-lg-7 offset-lg-1 pt-4 pt-lg-0">
+                    <div class="col-lg-7 offset-lg-1 pt-4 pt-lg-0">
                         <div class="wow fadeInDown" data-wow-duration="2s">
                             <h1>Academic Home</h1>
-                            <p class="lead">Here's my academic home, including the essays, publications and github
-                                repos.
+                            <p class="lead">academic encourages people participate into the-state-of-art technology and trends.
                             </p>
                         </div>
                         <div class="row mt-5 wow fadeInUp" data-wow-duration="2s">
@@ -389,8 +352,8 @@ title: Welcome!
         <div class="container " style="padding-top: 60px;">
             <div class="row align-items-center ">
                 <div class="col-md-8 col-lg-5">
-                    <img alt="image" class="fdb-icon" width="50px"
-                        src="https://raw.githubusercontent.com/froala/design-blocks/dev/src/imgs/icons/github.svg"
+                    <img alt="image" width="50px"
+                        src="./images/lock.svg"
                         style="margin-bottom: 20px;">
                     <h1 class="wow backInLeft">Lab</h1>
                     <p class="lead wow backInLeft" data-wow-duration="1.5s">Visit my lab info here with password.</p>
@@ -402,7 +365,7 @@ title: Welcome!
                 </div>
                 <div class="col-sm-10 m-auto col-md-6 pt-6 pt-md-0" style="padding-left: 183px;">
                     <img alt="image" class="img-fluid rounded-0"
-                        src="https://raw.githubusercontent.com/froala/design-blocks/dev/src/imgs/draws/chat.svg"
+                        src="./images/chat.svg"
                         style="width: 50%;">
                 </div>
             </div>
@@ -417,24 +380,35 @@ title: Welcome!
             text-decoration-line: none;
         }
 
-        footer p,footer a {
+        footer p,
+        footer a {
             margin: 0;
+            text-decoration-line: revert;
             /* padding-left: 0; */
         }
+        .footer-block {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+    padding: 7.5rem 0;
+    position: relative;
+    background-size: cover;
+    background-color: #FFF;
+}
     </style>
 
-    <footer class="fdb-block footer-large">
+    <footer class="footer-block footer-large">
         <div class="container">
-            <div class="row align-items-top text-center">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6 text-sm-left">
+            <div class="row align-items-top text-center mb-5">
+                <div class="col-sm-12 col-lg-6 text-sm-left">
                     <h3><strong>Contact</strong></h3>
                     <nav class="nav flex-column-2">
-                        <p class="nav-link col-3" href="https://www.froala.com">Address</p>
-                        <p class="nav-link col-9">East China Normal University</p>
-                        <p class="nav-link col-3" href="https://www.froala.com">Phone</p>
-                        <p class="nav-link col-9">(+86) 18516523459</p>
-                        <p class="nav-link col-3" href="https://www.froala.com">Email</p>
-                        <a class="nav-link col-9" href="mailto://whwu17@foxmail.com">whwu17@foxmail.com</a>
+                        <p class="nav-link col-3 p-0 pb-2" href="https://www.froala.com">Address</p>
+                        <p class="nav-link col-9 p-0 pb-2">East China Normal University</p>
+                        <p class="nav-link col-3 p-0 pb-2" href="https://www.froala.com">Phone</p>
+                        <p class="nav-link col-9 p-0 pb-2">(+86) 18516523459</p>
+                        <p class="nav-link col-3 p-0 pb-2" href="https://www.froala.com">Email</p>
+                        <a class="nav-link col-9 p-0 pb-2" href="mailto://whwu17@foxmail.com">whwu17@foxmail.com</a>
                     </nav>
                 </div>
 
@@ -442,15 +416,15 @@ title: Welcome!
 
 
                 <div class="col-12 col-md-4 col-lg-3 text-md-left mt-5 mt-md-0">
-                    <h3><strong>Write to us</strong></h3>
+                    <h3><strong>Write to me</strong></h3>
                     <p>Welcome to communicate with me! Feel free to contack me with following link. </p>
                     <br>
-                    <a href="contact"><button type="submit" class="btn btn-dark">Write to us</button></a>
+                    <a href="contact"><button type="submit" class="btn btn-dark">Write to me</button></a>
 
                 </div>
 
                 <div class="col-12 col-lg-2 ml-auto text-lg-left mt-4 mt-lg-0">
-                    <h3><strong>Follow Us</strong></h3>
+                    <h3><strong>Follow me</strong></h3>
                     <p class="lead">
                         <a href="https://www.froala.com" class="mx-2"><i class="fab fa-twitter"
                                 aria-hidden="true"></i></a>

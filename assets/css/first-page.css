@@ -26,6 +26,7 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	list-style-type:none;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -301,7 +302,7 @@ button,
 .button {
 	background-color: transparent;
 	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
-	color: #ffffff !important;
+	color: #ffffff;
 }
 
 input[type="submit"]:hover,

@@ -8,6 +8,13 @@ google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
 
+
+# self-intro page
+name: "Wu Wenhan"
+position: "Student @ ECNU"
+slogen: "
+Life is not a check-list of acquisition or achievement. Your qualifications, your CV, are not your life. Life is difficult, and complicated, and beyond anyone’s total control, and the humility to know that will enable you to survive its vicissitudes."
+
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo:  "/images/essay-page/profile.png"   # must have! Do like this: /images/siteicon.png
 description:
@@ -15,7 +22,7 @@ description:
 # Site Author
 author:
   name             : "Wu Wenhan"
-  avatar           : "essay-page/profile.png"
+  avatar           : "/essay-page/profile.png"
   bio              : "Student"
   location         : "East China Normal <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;University"
   employer         :
