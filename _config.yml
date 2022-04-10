@@ -69,14 +69,15 @@ social:
 Timezone: Etc/UTC
 
 collections:
-  staff_members:
-    _hide_content: true
   publications:
     output: true
     permalink: /:collection/:path/
   essays:
     output: true
     permalink: /:collection/:title/
+  musics:
+    output: true
+    permalink: /:collection/:path/
   
 paginate: 10
 paginate_path: "/blog/:num/"
@@ -108,6 +109,11 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  - scope:
+      path: ""
+      type: musics
+    values:
+      layout: music-page
 
 
 jekyll-archives:
