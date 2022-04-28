@@ -33,173 +33,84 @@ title: Welcome!
 </head>
 <style>
     /* 'scroll-snap-type' attribute is not respond on 'body' element!!! */
-    html{
+    html {
         /* scroll-snap-type: y mandatory; */
     }
+
+    div::-webkit-scrollbar {
+        width: 0;
+    }
+
+    section::-webkit-scrollbar {
+        width: 0;
+    }
+
+    section {
+        height: 100vh;
+        scroll-snap-align: center;
+        flex: none;
+        background: gray;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-top: 90px;
+    }
+
+    section#intro * {
+        color: black;
+    }
+
+    section#intro {
+        background-image: url(./images/self-bg.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: screen;
+    }
+
+    .slogan {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: white;
+    }
+
+    section#academic h1,
+    section#lab h1 {
+        color: white;
+
+        font-weight: 600;
+
+    }
+
+    section#academic strong,
+    section#lab strong {
+        color: white;
+        font-weight: 600;
+    }
+
+    section#academic {
+        background: #666;
+        background-image: url(./images/academic-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: screen;
+    }
+
+    section#lab {
+        background: #666;
+        background-image: url(./images/lab-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: screen;
+    }
 </style>
+
 <body>
-
-    <style>
-        .cover {
-            color: rgb(241, 241, 241);
-            height: 100%;
-            background: url("/images/start-page/start-page-2.jpg") no-repeat center center fixed;
-            width: 100%;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            position: absolute;
-        }
-
-        .cover-black {
-            background: #00000090;
-
-            height: 100%;
-            width: 100%;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            position: absolute;
-        }
-
-        /* clock css */
-
-        .seconds {
-            width: 40px;
-            height: 40px;
-            top: 280px;
-            left: 280px;
-            position: absolute;
-            text-align: center;
-            line-height: 40px;
-            font-size: 18pt;
-            border-radius: 50%;
-            background-color: rgba(81, 81, 81, 0.2);
-        }
-
-        .minutes {
-            width: 100px;
-            height: 100px;
-            top: 250px;
-            left: 250px;
-            position: absolute;
-            text-align: center;
-            line-height: 100px;
-            font-size: 52pt;
-            border-radius: 50%;
-            background-color: rgba(126, 126, 126, 0.7);
-        }
-
-        .hours {
-            width: 300px;
-            height: 300px;
-            top: 150px;
-            left: 150px;
-            position: absolute;
-            text-align: center;
-            line-height: 280px;
-            font-size: 133pt;
-            border-radius: 50%;
-            background-color: rgba(181, 181, 181, 0.4);
-        }
-
-        @media screen and (max-width: 960px) {
-
-            .seconds,
-            .minutes,
-            .hours {
-                display: none;
-            }
-        }
-
-        /* clock css end */
-
-        div::-webkit-scrollbar {
-            width: 0;
-        }
-
-        #main {
-            
-            display: flex;
-            flex-direction: column;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            height: 200vh;
-            background-color: #fff;
-        }
-
-        section {
-            height: 100vh;
-            scroll-snap-align: center;
-            flex: none;
-            background: gray;
-            overflow-y: scroll;
-            overflow-x: hidden;
-        }
-
-        section::-webkit-scrollbar {
-            width: 0;
-        }
-    </style>
-
-
     <div class="cover"></div>
     <div class="cover-black"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6" style="margin-left: -75px;">
-                <div class='hours'></div>
-                <div class='seconds'></div>
-                <div class='minutes'></div>
-            </div>
-            <div class="col-sm-12 col-lg-6 d-flex justify-content-center align-items-end flex-column"
-                style="height:100vh">
-                <div class="font-weight-bold" style="font-size: 50pt">Welcome!</div>
-                <div class="font-weight-normal" style="font-size: 20pt;">Start your exploration from here!</div>
-                <div class="button mt-4 mb-5 font-weight-bold">Enjoy</div>
-            </div>
-        </div>
-    </div>
-
-
-    <script>
-        setInterval(function () {
-            var seconds = new Date().getSeconds();
-            var sdegree = seconds * 6 + 270;
-            seconds = ("0" + seconds).slice(-2);
-            var secondSel = document.querySelector(".seconds");
-
-            secondSel.style.transform = "rotate(" + sdegree + "deg) translate(160px) rotate(-" + sdegree + "deg)";
-            secondSel.innerHTML = seconds;
-
-            var minutes = new Date().getMinutes();
-            var mdegree = minutes * 6 + 270;
-            var minutesSel = document.querySelector(".minutes");
-            minutes = ("0" + minutes).slice(-2);
-
-            minutesSel.style.transform = "rotate(" + mdegree + "deg) translate(181px) rotate(-" + mdegree + "deg)";
-            minutesSel.innerHTML = minutes;
-
-            var hours = new Date().getHours();
-            var hoursSel = document.querySelector(".hours");
-
-            if (hours > 12) {
-                hours = hours - 12;
-            }
-
-            hours = ("0" + hours).slice(-2);
-
-            hoursSel.innerHTML = hours;
-        }, 1000);
-    </script>
-
+    {% include first-page/clock.html %}
 
     <!-- <div style="height: 100vh;"></div> -->
     <!-- Nav -->
-    <!-- this goes inside the header tag-->
-<!-- <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" rel="stylesheet" type="text/css"> -->
+
     <nav id="nav" style="position:sticky;position: -webkit-sticky;top:0;z-index: 999;">
         <ul>
             <li><a href="#intro" class="active">Home</a></li>
@@ -211,16 +122,22 @@ title: Welcome!
             <li><a href="#second">Literature & Cooking</a></li>
         </ul>
     </nav>
-    <!-- Main -->
 
+    <!-- Scripts for nav -->
+    <script src="/assets/js/jquery-1.10.1.min.js"></script>
+    <script src="/assets/js/jquery.scrollex.min.js"></script>
+    <script src="/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/assets/js/first-page.js"></script>
+
+    <!-- Main -->
     <!-- Introduction -->
-    <section id="intro" class="main" >
+    <section id="intro">
         <div class="container wow fadeInUp" data-wow-duration="2s" style="background:#ffffffcc;padding:40px">
             <div class="row text-center justify-content-center wow fadeInLeft" data-wow-delay="2s"
                 data-wow-duration="2s">
                 <div class="col">
                     <h1 class="major">Hi, welcome to my personal page!</h1>
-                    <p class="lead">Hope you'll have a nice experience here.</p>
+                    <p class="slogan">Hope you'll have a nice experience here.</p>
                 </div>
             </div>
 
@@ -249,70 +166,7 @@ title: Welcome!
 
     </section>
 
-    <style>
-        section#intro * {
-            color: black;
-        }
-
-        section#intro {
-            /* background: #fff; */
-            background-image: url(./images/self-bg.jfif);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-blend-mode: screen;
-
-        }
-
-        section#academic h1,
-        section#lab h1 {
-            color: white;
-
-            font-weight: 600;
-
-        }
-
-        section#academic strong,
-        section#lab strong {
-            color: white;
-            font-weight: 600;
-        }
-
-        .lead {
-
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: white;
-
-        }
-
-        section {
-            padding-top: 90px;
-        }
-
-
-
-        section#academic {
-
-
-            background: #666;
-            background-image: url(./images/academic-bg.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-blend-mode: screen;
-
-        }
-
-        section#lab {
-
-            background: #666;
-            background-image: url(./images/lab-bg.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-blend-mode: screen;
-        }
-    </style>
-
-    <section id="academic" class="main">
+    <section id="academic">
         <div class="p-4" style="background:#0007">
             <div class="container">
                 <div class="row text-left align-items-center">
@@ -354,9 +208,7 @@ title: Welcome!
         </div>
     </section>
 
-
-
-    <section id="lab" class="main">
+    <section id="lab">
         <!-- <svg width="100%" height="100%" style="position: absolute;margin-top: -90px;" viewBox="0 0 100 150">
             <path d="M20 0, T 75 10, 45 150, L200 150,L200 0" stroke-width="3" fill="#f4f7fecc"></path>
         </svg> -->
@@ -381,18 +233,18 @@ title: Welcome!
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://www.vantajs.com/dist/vanta.rings.min.js"></script>
     <script>
-           VANTA.RINGS({
-               el: "#lab",
-               mouseControls: true,
-               touchControls: true,
-               gyroControls: false,
-               minHeight: 200.00,
-               minWidth: 200.00,
-               scale: 1.00,
-               scaleMobile: 1.00,
-               backgroundColor: 0x0,
-               color: 0x8f8598
-           })
+        VANTA.RINGS({
+            el: "#lab",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0x0,
+            color: 0x8f8598
+        })
     </script>
 
 
@@ -436,9 +288,6 @@ title: Welcome!
                     </nav>
                 </div>
 
-
-
-
                 <div class="col-12 col-md-4 col-lg-3 text-md-left mt-5 mt-md-0">
                     <h3><strong>Write to me</strong></h3>
                     <p>Welcome to communicate with me! Feel free to contack me with following link. </p>
@@ -480,15 +329,8 @@ title: Welcome!
 
     <script src="assets/js/wow.js"></script>
     <script>
-            new WOW().init();
+        new WOW().init();
     </script>
-
-    <!-- Scripts -->
-    <script src="/assets/js/jquery-1.10.1.min.js"></script>
-    <script src="/assets/js/jquery.scrollex.min.js"></script>
-    <script src="/assets/js/jquery.scrolly.min.js"></script>
-    
-    <script src="/assets/js/first-page.js"></script>
 
 </body>
 

@@ -1,0 +1,123 @@
+<style>
+    .cover {
+        color: rgb(241, 241, 241);
+        height: 100%;
+        background: url("/images/start-page/start-page-2.jpg") no-repeat center center fixed;
+        width: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+    }
+
+    .cover-black {
+        background: #00000090;
+
+        height: 100%;
+        width: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+    }
+
+    /* clock css */
+
+    .seconds {
+        width: 40px;
+        height: 40px;
+        top: 280px;
+        left: 280px;
+        position: absolute;
+        text-align: center;
+        line-height: 40px;
+        font-size: 18pt;
+        border-radius: 50%;
+        background-color: rgba(81, 81, 81, 0.2);
+    }
+
+    .minutes {
+        width: 100px;
+        height: 100px;
+        top: 250px;
+        left: 250px;
+        position: absolute;
+        text-align: center;
+        line-height: 100px;
+        font-size: 52pt;
+        border-radius: 50%;
+        background-color: rgba(126, 126, 126, 0.7);
+    }
+
+    .hours {
+        width: 300px;
+        height: 300px;
+        top: 150px;
+        left: 150px;
+        position: absolute;
+        text-align: center;
+        line-height: 280px;
+        font-size: 133pt;
+        border-radius: 50%;
+        background-color: rgba(181, 181, 181, 0.4);
+    }
+
+    @media screen and (max-width: 960px) {
+
+        .seconds,
+        .minutes,
+        .hours {
+            display: none;
+        }
+    }
+
+    /* clock css end */
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6" style="margin-left: -75px;">
+            <div class='hours'></div>
+            <div class='seconds'></div>
+            <div class='minutes'></div>
+        </div>
+        <div class="col-sm-12 col-lg-6 d-flex justify-content-center align-items-end flex-column"
+            style="height:100vh">
+            <div class="font-weight-bold" style="font-size: 50pt">Welcome!</div>
+            <div class="font-weight-normal" style="font-size: 20pt;">Start your exploration from here!</div>
+            <div class="button mt-4 mb-5 font-weight-bold">Enjoy</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    setInterval(function () {
+        var seconds = new Date().getSeconds();
+        var sdegree = seconds * 6 + 270;
+        seconds = ("0" + seconds).slice(-2);
+        var secondSel = document.querySelector(".seconds");
+
+        secondSel.style.transform = "rotate(" + sdegree + "deg) translate(160px) rotate(-" + sdegree + "deg)";
+        secondSel.innerHTML = seconds;
+
+        var minutes = new Date().getMinutes();
+        var mdegree = minutes * 6 + 270;
+        var minutesSel = document.querySelector(".minutes");
+        minutes = ("0" + minutes).slice(-2);
+
+        minutesSel.style.transform = "rotate(" + mdegree + "deg) translate(181px) rotate(-" + mdegree + "deg)";
+        minutesSel.innerHTML = minutes;
+
+        var hours = new Date().getHours();
+        var hoursSel = document.querySelector(".hours");
+
+        if (hours > 12) {
+            hours = hours - 12;
+        }
+
+        hours = ("0" + hours).slice(-2);
+
+        hoursSel.innerHTML = hours;
+    }, 1000);
+</script>
