@@ -103,29 +103,7 @@
 
 				},
 				enter: function () {
-
-					// Activate section.
-					$section.removeClass('inactive');
-					if(timer) {clearInterval(timer);timer=null;}
-					if (Math.round(window.pageYOffset) != Math.round($section[0].offsetTop)){
-						timer = setInterval(function () {
-							if (Math.round(window.pageYOffset) < Math.round($section[0].offsetTop)) {
-								window.scrollBy(0, 20);
-								if (Math.round(window.pageYOffset) >= Math.round($section[0].offsetTop)) {
-									clearInterval(timer);
-									timer=null;
-								}
-							} else {
-								window.scrollBy(0, -20);
-								if (Math.round(window.pageYOffset) <= Math.round($section[0].offsetTop)) {
-									clearInterval(timer);
-timer=null;
-								}
-							}
-						}, 10);
-					}
-					// window.scrollTo(0,$section.offsetTop).scrolly({speed: 1000});
-					// console.log($section[0].offsetTop);
+					
 					// No locked links? Deactivate all links and activate this section's one.
 					if ($nav_a.filter('.active-locked').length == 0) {
 
