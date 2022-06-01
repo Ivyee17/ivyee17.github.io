@@ -1,0 +1,53 @@
+internship:
+- title: "用于人工智能标准化的中心化人脸检测模型"
+  time: "2021.10 - 2021.12"
+  company: "依图（上海）科技有限公司"
+  position: "人工智能标准化研究组-研究员"
+  content:
+  - "检索目前的人脸识别模型方案，并匹配适用于中心化的人脸识别特征图生成和检测的模型。"
+  - "设计了经中心处理后的人脸特征图的格式，并通过预训练模型进一步提高了中心侧的准确度。"
+  - "作为人脸检测领域使用的标准化模型的一个例子，提出了一个可能的案例来验证模型中使用的真实人脸图像的有效性和隐私保护。"
+
+- time: "2021.07 - 2021.10"
+  title: "车道线数据闭环分析与可视化项目"
+  company: "Nullmax Technology Co. ltd."
+  position: "数据分析与可视化"
+  content:
+  - 车道线分类任务，通过Python和Zeppelin对车道线信息进行数据分析和可视化，供用户展示。
+  - 基于数据驱动的数据闭环。通过将采集数据在Airflow上进行数据处理，筛选出相应的车道线难例，编写脚本，从而进一步的分析其中可能出现的分类问题，并展示给相关技术人员和用户。
+  - 成功处理高数据量场景下的筛选时长，减少数据库的读取次数，从而提升300%页面响应效率。
+
+projects:
+- time: "2019.04 - 2020.03"
+  title: "基于自动重构算法实现的设计阶段代码复杂度降解工具"
+  content:
+  - 该工具将基于遗传算法进行实现，以设计类图为输入，实现软件复杂度的降解。
+  - 该平台基于Spring Boot(Jama)和Vue.js(Echarts)开发，使用MySQL和Redis数据库进行持久化存储。同时，还将提供Graphviz的桌面版，使用户可以离线进行操作。
+  - 本人主要负责产品和数据库设计、代码实现及部署、接口调用、客户端展示、单元测试等。
+  - 在KSEM 2021(CCF-C)上以第一作者发表论文：Analyzing and Recommending Development Order Based on Design Class Diagram，实现了相关代码并申请了软件著作权。
+
+outcomes:
+- title: "Tencent WeOpen Star Contributor (No. 0020)"
+  time: "2022.05"
+  place: "OpenMLDB Git: <a href=\"https://github.com/4paradigm/OpenMLDB\">https://github.com/4paradigm/OpenMLDB</a>"
+  details: "OpenMLDB: (1) 3 builtin function for SQL, (2) compile warning and (3) Javadoc fix. <br/>Merged to main branch. <br/><h4 class=num_anim>6</h4> PR / <h4  class=num_anim>6</h4> issues / <h4  class=num_anim>88</h4> commits / <h4  class=num_anim>110</h4> conversations "
+- title: "Chenchao Wang, Chao Peng, Mengdan Wang, Rui Yang, Wenhan Wu, Qilin Rui, Neal N. Xiong: CTHGAT: Category-aware and Time-aware Next Point-of-Interest via Heterogeneous Graph Attention Network. SMC 2021: 2420-2426"
+  time: "2021/10/17"
+  place: "2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC 2021)"
+  details: "Co-author."
+- title: "Wenhan Wu, Yongxin Zhao, Chao Peng, Yongjian Li, Qin Li: Analyzing and Recommending Development Order Based on Design Class Diagram. KSEM 2021: 524-537"
+  time: "2021/08/16"
+  place: "The 14th International Conference on Knowledge Science, Engineering and Management (KSEM 2021)"
+  details: "Written and published as the first author."
+
+- title: "Huawei Ascend Model Zoo Contributor"
+  time: "2020.11 - 2021.03"
+  place: "Modelzoo Git: <a href=\"https://gitee.com/ascend/modelzoo-his\">https://gitee.com/ascend/modelzoo-his</a>"
+  details: "RealNVP Flow Model: (1) training, (2) testing and (3) offline inference. <br/>Merged to main branch. <br/><h4 class=num_anim>5</h4> PR / <h4  class=num_anim>6</h4> issues "
+
+- title: "软件著作权第5530258号"
+  time: "2020/03/14"
+  place: "登记号：2020SR0651562"
+  details: "基于自动重构技术的软件复杂度降解平台（SRT V1.0）"
+
+

@@ -78,6 +78,9 @@ collections:
   musics:
     output: true
     permalink: /:collection/:path/
+  resumes:
+    output: true
+    permalink: /resumes/:categories/:title/
   
 paginate: 10
 paginate_path: "/blog/:num/"
@@ -114,6 +117,11 @@ defaults:
       type: musics
     values:
       layout: music-page
+  - scope:
+      path: ""
+      type: resumes
+    values:
+      layout: resume-page/template2
 
 
 jekyll-archives:
@@ -126,6 +134,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-redirect-from
 
 exclude:
   - Gemfile

@@ -1,0 +1,10 @@
+skills:
+- name: java
+  score: 90
+- name: MySQL
+  score: 70
+list:
+- 对Linux系统的命令有了解。使用过shell脚本、Electron.js框架和面向对象的设计分析。
+- 熟悉R语言和Python，掌握基本的数据库操作及导入导出，对MySQL较为熟悉。
+- 了解Spring Boot、MyBatis(MySQL)、Redis等常用基于Web应用的开发技术。
+- 乐于团队开发，具有较强的组织、自学、沟通能力，热爱学习，勇于挑战。

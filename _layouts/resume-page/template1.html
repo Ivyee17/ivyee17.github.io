@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <title>Resume</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f8f8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
+</head>
+<style>
+    body {
+        margin: 50px 50px;
+    }
+
+    .row {
+        font-family: "Microsoft YaHei";
+        font-size: 11pt;
+        line-height: 1.6;
+        font-weight: bold;
+    }
+
+    .title {
+        color: rgb(107,187,176);
+        font-size:18px;
+    }
+</style>
+
+<body>
+    <div class="row align-items-center">
+        <div>
+            <img style="height:30px" src="/images/diamond.png" />
+        </div>
+        <div>
+            <p class="ml-3 mb-0 title">教育背景</p>
+        </div>
+        <div class="col-10 ml-3 p-0">
+            <img style="width:100%" src="/images/dot-line.png" />
+        </div>
+        <!-- <hr class="col-8" style="border:1px dashed #000; height:1px"/> -->
+    </div>
+    <div class="p-1"></div>
+    {% for details in page.education %}
+    <div class="row align-items-center">
+        <div class="col-2 font-weight-bold">
+            {{ details.time }}
+        </div>
+        <div class="col-6 font-weight-bold">
+            {{ details.school }} {{ details.degree }}
+        </div>
+        <div class="col-4 font-weight-bold text-muted" style="font-size:8px">
+            GPA: {{ details.gpa }}
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+</body>
+
+</html>
