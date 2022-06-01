@@ -12,7 +12,7 @@
 
       <div class="section-title">
         <h2>Skills</h2>
-        <p>The scores are relative. There's still a lot for me to learn for each one.</p>
+        <p>All the scores are relative. There's still a lot for me to learn for each one.</p>
       </div>
       <div class="resume-item">
         <ul>
@@ -29,7 +29,7 @@
 
           {% for el in page.skills %}
           {% assign mod = forloop.index | modulo: 2 %}
-          {% if mod == 0 %}
+          {% if mod == 1 %}
           <div class="progress">
             <span class="skill">{{ el.name }} <i class="val">{{ el.score }}%</i></span>
             <div class="progress-bar-wrap">
@@ -47,7 +47,7 @@
 
           {% for el in page.skills %}
           {% assign mod = forloop.index | modulo: 2 %}
-          {% if mod == 1 %}
+          {% if mod == 0 %}
           <div class="progress">
             <span class="skill">{{ el.name }} <i class="val">{{ el.score }}%</i></span>
             <div class="progress-bar-wrap">

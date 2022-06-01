@@ -25,6 +25,12 @@ projects:
   - 该平台基于Spring Boot(Jama)和Vue.js(Echarts)开发，使用MySQL和Redis数据库进行持久化存储。同时，还将提供Graphviz的桌面版，使用户可以离线进行操作。
   - 本人主要负责产品和数据库设计、代码实现及部署、接口调用、客户端展示、单元测试等。
   - 在KSEM 2021(CCF-C)上以第一作者发表论文：Analyzing and Recommending Development Order Based on Design Class Diagram，实现了相关代码并申请了软件著作权。
+- time: 2020.11-2021.03 
+  title: 基于Tensorflow的RealNVP模型迁移
+  content:
+  - 使用RealNVP对CIFAR-10中的图片进行流处理，使其符合一定的数据分布。
+  - 基于Tensorflow将RealNVP迁移至华为昇腾AI平台，并进行算子匹配。
+  - 实现了相关迁移代码适配与离线推理，并合并入相关开源项目。
 
 outcomes:
 - title: "Tencent WeOpen Star Contributor (No. 0020)"
