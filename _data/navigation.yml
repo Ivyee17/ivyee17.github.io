@@ -36,8 +36,8 @@ essay-page:
   - title: "Tags & Collections"
     url: /tags/
   - title: "Resume"
-    url: /cv/
+    url: /resumes/complete?home
         
-  - title: "Back To Mainpage"
+  - title: "Visit my Homepage"
     url: /
     

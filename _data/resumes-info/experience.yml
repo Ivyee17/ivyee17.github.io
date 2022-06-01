@@ -18,6 +18,20 @@ internship:
   - 成功处理高数据量场景下的筛选时长，减少数据库的读取次数，从而提升300%页面响应效率。
 
 projects:
+- time: 2022.01-2022.06 
+  title: GitHub Pages设计与重构
+  content:
+  - 即本页面所在项目。基于Bootstrap规范设计，采用响应式布局（同时适配手机 / 电脑端）与原生HTML / CSS制作。
+  - 设计有效的yaml格式，基于Liquid语法和Jekyll特性，使其能有效的匹配相关的个人信息，并设计了对应的数据与页面分离的布局。
+  - 引入c-player等库函数用于辅助支持，并对原库进行必要的源码改进（基于Typescript）。
+  - 参考时下最新的页面设计样例，对页面进行美观改进。
+  - 由于GitHub Pages对Jekyll插件支持数量较少，本次实现中尽量降低第三方插件的依赖，从而实现gh-env的自动配置与部署。
+- time: 2020.11-2021.03 
+  title: 基于Tensorflow的RealNVP模型迁移
+  content:
+  - 使用RealNVP对CIFAR-10中的图片进行流处理，使其符合一定的数据分布。
+  - 基于Tensorflow将RealNVP迁移至华为昇腾AI平台，并进行算子匹配。
+  - 实现了相关迁移代码适配与离线推理，并合并入相关开源项目。
 - time: "2019.04 - 2020.03"
   title: "基于自动重构算法实现的设计阶段代码复杂度降解工具"
   content:
@@ -25,12 +39,7 @@ projects:
   - 该平台基于Spring Boot(Jama)和Vue.js(Echarts)开发，使用MySQL和Redis数据库进行持久化存储。同时，还将提供Graphviz的桌面版，使用户可以离线进行操作。
   - 本人主要负责产品和数据库设计、代码实现及部署、接口调用、客户端展示、单元测试等。
   - 在KSEM 2021(CCF-C)上以第一作者发表论文：Analyzing and Recommending Development Order Based on Design Class Diagram，实现了相关代码并申请了软件著作权。
-- time: 2020.11-2021.03 
-  title: 基于Tensorflow的RealNVP模型迁移
-  content:
-  - 使用RealNVP对CIFAR-10中的图片进行流处理，使其符合一定的数据分布。
-  - 基于Tensorflow将RealNVP迁移至华为昇腾AI平台，并进行算子匹配。
-  - 实现了相关迁移代码适配与离线推理，并合并入相关开源项目。
+
 
 outcomes:
 - title: "Tencent WeOpen Star Contributor (No. 0020)"

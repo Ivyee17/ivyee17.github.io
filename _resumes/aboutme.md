@@ -1,9 +1,5 @@
 ---
 # layout: resume-page/aboutme
-collection: developer
-redirect_from:
- - /dev/a
- - /ss/a
 
 myname: 吴文翰
 address: 上海市浦东新区xxxx路xxx弄xx号xxx室

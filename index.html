@@ -101,6 +101,27 @@ title: Welcome!
         background-size: cover;
         background-blend-mode: screen;
     }
+
+    section#resume {
+        background-image: url(./images/resume-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: screen;
+    }
+
+    section#resume * {
+        color: black;
+    }
+
+    section#music {
+        background-image: url(./images/music-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: screen;
+    }
+    section#music * {
+        color: slategrey;
+    }
 </style>
 
 <body>
@@ -114,12 +135,13 @@ title: Welcome!
     <nav id="nav" style="position:sticky;position: -webkit-sticky;top:0;z-index: 999;">
         <ul>
             <li><a href="#intro" class="active">Home</a></li>
+            <li><a href="#resume">Resumes</a></li>
             <li><a href="#academic">Academic</a></li>
-            <li><a href="#blog">Blog</a></li>
             <li><a href="#lab">Lab</a></li>
-            <li><a href="#project">Design</a></li>
-            <li><a href="#none">Teacher</a></li>
-            <li><a href="#second">Literature & Cooking</a></li>
+            <li><a href="#novel">Literature</a></li>
+            <li><a href="#music">Musics</a></li>
+            <li><a href="#useful-links">Links</a></li>
+            <!-- useful links+ sideline: design, teacher.literature, cooking, davinci, coffee, so on -->
         </ul>
     </nav>
 
@@ -166,6 +188,35 @@ title: Welcome!
 
     </section>
 
+    <section id="resume">
+        <div class="container " style="padding-top: 60px;">
+            <div class="row align-items-center ">
+                <div class="col-md-8 col-lg-5">
+                    <img alt="image" width="50px" src="./images/lock.svg" style="margin-bottom: 20px;">
+                    <h1 class="wow backInLeft">Resume</h1>
+                    <p class="slogen wow backInLeft" data-wow-duration="1.5s">Want to know more about me? Choose one to
+                        explore!</p>
+                    <p class="slogen wow backInLeft text-danger" data-wow-duration="1.5s">* Not all pages are listed
+                        here. Some resumes might be hidden for private use only!</p>
+                    <div class="wow backInLeft" data-wow-duration="2s">
+                        <ul class="actions">
+                            <li><a href="resumes/complete" class="button">Full Resume</a></li>
+                            <li><a href="resumes/developer" class="button">Developer (Java-based)</a></li>
+                            <!-- <li><a href="resumes/python" class="button">Developer (Python-based)</a></li> -->
+                            <!-- <li><a href="resumes/developer-en" class="button">Developer (en)</a></li> -->
+                            <!-- <li><a href="resumes/data" class="button">Data Analyst</a></li> -->
+                            <!-- <li><a href="resumes/it" class="button">IT Instructor</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
     <section id="academic">
         <div class="p-4" style="background:#0007">
             <div class="container">
@@ -177,7 +228,8 @@ title: Welcome!
                     <div class="col-lg-7 offset-lg-1 pt-4 pt-lg-0">
                         <div class="wow fadeInDown" data-wow-duration="2s">
                             <h1>Academic Home</h1>
-                            <p class="slogen">Academic encourages people participate into the-state-of-art technology and
+                            <p class="slogen">Academic encourages people participate into the-state-of-art technology
+                                and
                                 trends.
                             </p>
                         </div>
@@ -246,6 +298,47 @@ title: Welcome!
             color: 0x8f8598
         })
     </script>
+
+    <section id="novel">
+
+    </section>
+
+    <section id="music">
+        <div class="p-4" >
+            <div class="container">
+                <div class="row text-left align-items-center">
+                    
+
+                    <div class="col-lg-7 offset-lg-1 pt-4 pt-lg-0">
+                        <div class="wow fadeInDown" data-wow-duration="2s">
+                            <h1>Music Player</h1>
+                            <p class="slogen">Let's relax!
+                            </p>
+                        </div>
+                        <div class="row mt-5 wow fadeInUp" data-wow-duration="2s">
+                            <div class="col-12 col-sm-12">
+                                
+                                <p class="slogen">Only for personal and study use. Reusing the music resources in these players are strictly not allowed!</p>
+                            </div>
+
+                            
+                            <div class="col-12 col-sm-12 pt-sm-4 wow fadeInLeft"
+                                style="padding-right: 40px;"
+                                data-wow-delay="1s" data-wow-duration="4s">
+                                <ul class="actions">
+                                    <li><a href="musics/ceye" class="button">Sample - Ceye</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="useful-links">
+
+    </section>
 
 
     <style>
@@ -317,9 +410,14 @@ title: Welcome!
             <p class="row-70" <div class="row mt-3">
             <div class="col text-center">
                 &copy; Wu Wenhan. Inspired by <a href="www.froala.com/design-blocks">design-blocks</a>.
-                Template based on <a href="https://html5up.net">Stellar</a> and <a href="http://startbootstrap.github.io/startbootstrap-clean-blog-jekyll/">jekyll clean theme</a>. Animations export
+                Template based on <a href="https://html5up.net">Stellar</a> and <a
+                    href="http://startbootstrap.github.io/startbootstrap-clean-blog-jekyll/">jekyll clean theme</a>.
+                Animations export
                 from
-                <a href="https://wowjs.uk/">wow.js</a> and <a href="https://animate.style/">animate.js</a> under <a href="https://github.com/twbs/bootstrap/blob/v4.0.0/LICENSE">Bootstrap license</a>. Free for personal and commercial use under the <a href="https://html5up.net/license">CCA 3.0</a>
+                <a href="https://wowjs.uk/">wow.js</a> and <a href="https://animate.style/">animate.js</a> under <a
+                    href="https://github.com/twbs/bootstrap/blob/v4.0.0/LICENSE">Bootstrap license</a>. Photo by form <a
+                    href="https://pxhere.com/">PxHere</a>. Free for
+                personal and commercial use under the <a href="https://html5up.net/license">CCA 3.0</a>
                 and
                 <a href="https://spdx.org/licenses/MIT">MIT license</a>.
             </div>
