@@ -19,6 +19,7 @@ import ItemList from '../../ui/component/itemlist.js';
 export default class ListPage extends Page {
   constructor() {
     super(document.querySelector('#list_page'));
+    await this.importFile(file('/images/test.txt'));
   }
   matchUrl(url) { return url === '/'; }
   getUrl(param) { return '/'; }
@@ -105,6 +106,7 @@ export default class ListPage extends Page {
     });
   }
   async importFile(item) {
+    console.log(item)
     try {
       this.importTip.style.display = 'block';
       const raw_content = await text.readFile(item);
