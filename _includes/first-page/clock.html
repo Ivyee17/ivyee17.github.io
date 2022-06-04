@@ -28,8 +28,8 @@
     .seconds {
         width: 40px;
         height: 40px;
-        top: 280px;
-        left: 280px;
+        top: 130px;
+        left: 170px;
         position: absolute;
         text-align: center;
         line-height: 40px;
@@ -41,8 +41,8 @@
     .minutes {
         width: 100px;
         height: 100px;
-        top: 250px;
-        left: 250px;
+        top: 100px;
+        left: 140px;
         position: absolute;
         text-align: center;
         line-height: 100px;
@@ -54,8 +54,8 @@
     .hours {
         width: 300px;
         height: 300px;
-        top: 150px;
-        left: 150px;
+        top: 0px;
+        left: 40px;
         position: absolute;
         text-align: center;
         line-height: 280px;
@@ -64,7 +64,7 @@
         background-color: rgba(181, 181, 181, 0.4);
     }
 
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 992px) {
 
         .seconds,
         .minutes,
@@ -75,21 +75,7 @@
 
     /* clock css end */
 </style>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6" style="margin-left: -75px;">
-            <div class='hours'></div>
-            <div class='seconds'></div>
-            <div class='minutes'></div>
-        </div>
-        <div class="col-sm-12 col-lg-6 d-flex justify-content-center align-items-end flex-column"
-            style="height:100vh">
-            <div class="font-weight-bold" style="font-size: 50pt">Welcome!</div>
-            <div class="font-weight-normal" style="font-size: 20pt;">Start your exploration from here!</div>
-            <div class="button mt-4 mb-5 font-weight-bold">Enjoy</div>
-        </div>
-    </div>
-</div>
+
 
 <script>
     setInterval(function () {
