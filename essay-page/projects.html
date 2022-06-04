@@ -9,12 +9,30 @@ author_profile: true
 
 
 {% include essay-page/base_path %}
+<h3 style="
+    clear: both;
+    line-height: 1;
+    padding-top: 1rem;
+">My Contributions</h3>
+<div style="border: 1px solid #cccccc;
+border-radius: 1rem;
+padding: 15px;
+padding-bottom: 25px;
+margin-left: 10px;">
+<img src="https://ghchart.rshah.org/409ba5/ivyee17"/>
+</div>
+<h3 style="
+    clear: both;
+    line-height: 1;
+    padding-top: 1rem;
+">My GitHub</h3>
+
 <div class="gitcards gc-user" data-user="ivyee17"></div>
 <h3 style="
     clear: both;
     line-height: 1;
     padding-top: 1rem;
-">My Repositories</h2>
+">My Repositories</h3>
 <div id="allrepos">
 
 </div>
@@ -33,7 +51,7 @@ author_profile: true
     for (var e of info) {
       var el = document.getElementById("allrepos");
       el.innerHTML += "<div class=\"gitcards\" style=\"float: left;\" data-user=\"ivyee17\" data-repo=\"" + e.name + "\"></div>";
-      break;
+      // break;
     }
     url = "https://api.github.com/users/" + "ivyee17" + "/starred";
     response = await fetch(url);
@@ -42,7 +60,7 @@ author_profile: true
     for (var e of info) {
       var el = document.getElementById("allstarred");
       el.innerHTML += "<div class=\"gitcards\" style=\"float: left;\" data-user=\""+e.owner.login+"\" data-repo=\"" + e.name + "\"></div>";
-      break;
+      // break;
     }
     $("#allstarred").append("<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/gitcards.css\"></link><script type=\"text/javascript\" src=\"../assets/js/jquery-1.10.1.min.js\"><\/script><script type=\"text/javascript\" src=\"../assets/js/gitcards.js\"><\/script>"); 
     

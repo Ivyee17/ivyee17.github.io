@@ -35,9 +35,9 @@ essay-page:
     url: /projects/    
   - title: "Tags & Collections"
     url: /tags/
-  - title: "Resume"
+  - title: "Resumes"
     url: /resumes/complete?home
         
-  - title: "Visit my Homepage"
+  - title: "Exit"
     url: /
     

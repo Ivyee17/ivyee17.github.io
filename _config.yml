@@ -81,6 +81,9 @@ collections:
   resumes:
     output: true
     permalink: /resumes/:categories/:title/
+  novels:
+    output: true
+    permalink: /novels/:title/
   
 paginate: 10
 paginate_path: "/blog/:num/"
@@ -89,9 +92,9 @@ permalink: pretty
 defaults:
   - scope:
       path: ""
-      type: posts
+      type: novels
     values:
-      layout: "post"
+      layout: novel
       _options:
         content:
           width: 1500

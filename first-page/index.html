@@ -84,41 +84,35 @@ permalink: /index.html
 
     <!-- ======= About Section ======= -->
     <style>
-      section#intro {
-        background-image: url(./images/self-bg.jfif);
+      section {
         background-repeat: no-repeat;
         background-size: cover;
+        background-blend-mode: screen;
+      }
+
+      section#intro {
+        background-image: url(./images/self-bg.jfif);
+
       }
 
       section#resume {
         background-image: url(./images/resume-bg.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: screen;
         background-color: grey;
       }
 
       section#academic {
         background: #666;
         background-image: url(./images/academic-bg.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: screen;
+
       }
 
       section#lab {
         background: #666;
         background-image: url(./images/lab-bg.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: screen;
       }
 
       section#resume {
         background-image: url(./images/resume-bg.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: screen;
       }
 
       section#academic,
@@ -128,13 +122,17 @@ permalink: /index.html
 
       section#music {
         background-image: url(./images/music-bg.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: screen;
       }
 
       section#music * {
         color: slategrey;
+      }
+
+      section#novel {
+        background-image: url(./images/novel-bg.jpg);
+      }
+      section#useful-links {
+        background-image: url(./images/links-bg.jpg);
       }
     </style>
     <section id="intro" class="intro">
@@ -253,7 +251,7 @@ permalink: /index.html
       <!-- <svg width="100%" height="100%" style="position: absolute;margin-top: -90px;" viewBox="0 0 100 150">
           <path d="M20 0, T 75 10, 45 150, L200 150,L200 0" stroke-width="3" fill="#f4f7fecc"></path>
       </svg> -->
-      <div class="container " style="padding-top: 60px;">
+      <div class="container" style="padding-top: 60px;">
         <div class="row align-items-center ">
           <div class="col-md-8 col-lg-5">
             <img alt="image" width="50px" src="./images/lock.svg" style="margin-bottom: 20px;">
@@ -289,44 +287,78 @@ permalink: /index.html
     </script>
 
     <section id="novel">
-
-    </section>
-
-    <section id="music">
-      <div class="p-4">
-        <div class="container">
-          <div class="row text-left align-items-center">
-
-
-            <div class="col-lg-7 offset-lg-1 pt-4 pt-lg-0">
-              <div data-aos="fade-down" data-aos-duration="2000">
-                <h1>Music Player</h1>
-                <p>Let's relax!
-                </p>
-              </div>
-              <div class="row mt-5" data-aos="fade-up" data-aos-duration="2000">
-                <div class="col-12 col-sm-12">
-
-                  <p>Only for personal and study use. Reusing the music resources in these players are strictly not
-                    allowed!</p>
-                </div>
-
-
-                <div class="col-12 col-sm-12 pt-sm-4 " data-aos="fade-left" style="padding-right: 40px;"
-                  data-aos-delay="1000" data-aos-duration="4000">
-                  <ul class="actions">
-                    <li><a href="musics/ceye" class="button">Sample - Ceye</a></li>
-                  </ul>
-                </div>
-              </div>
+      <div class="container p-4 pt-5">
+        <div class="row text-left align-items-center">
+          <div class="col-lg-7 pt-4 pt-lg-0">
+            <div data-aos="fade-down" data-aos-duration="2000">
+              <h1>Novel</h1>
+              <div class="p-3"></div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000">
+              <h5>For sometime that we need to escape temporarily from current situations.</h5>
+            </div>
+            <div data-aos="fade-left" style="padding-right: 40px;" data-aos-delay="1000" data-aos-duration="4000">
+              <ul class="actions">
+                <li><a href="novel-lp" class="button">Living Project</a></li>
+              </ul>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000">
+              <h5>App for reading (for better experience), available to read directly.</h5>
+            </div>
+            <div data-aos="fade-left" style="padding-right: 40px;" data-aos-delay="1000" data-aos-duration="4000">
+              <ul class="actions">
+                <li><a href="novel-page" class="button">tReader (iOS-style reading tool)</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="useful-links" style="background:#666">
+    <section id="music">
+      <div class="container p-4">
+        <div class="row text-left">
+          <div class="col-lg-7 pt-4 pt-lg-0">
+            <div data-aos="fade-down" data-aos-duration="2000">
+              <h1>Music Player</h1>
+              <h5>Feeling tired? Have some fun!</h5>
+            </div>
 
+            <div data-aos="fade-up" data-aos-duration="2000">
+              <p>Only for personal and study use. Reusing the music resources in these players are strictly not
+                allowed!</p>
+            </div>
+            <div data-aos="fade-left" style="padding-right: 40px;" data-aos-delay="1000" data-aos-duration="4000">
+              <ul class="actions">
+                <li><a href="musics/ceye" class="button">Sample - Book Leaf One</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="useful-links" >
+      <div class="container p-4">
+        <div class="row text-left">      
+          <div class="col-lg-7 pt-4 pt-lg-0">
+            <div class="beta">beta</div>
+            <div data-aos="fade-down" data-aos-duration="2000">
+              <h1>Useful Links</h1>
+              <p>Some links to backup.</p>
+            </div>
+
+            <div data-aos="fade-left" style="padding-right: 40px;" data-aos-delay="1000" data-aos-duration="4000">
+              <ul class="actions">
+                <li><a href="https://music.myepoch.cn/" class="button">Music downloader</a></li>
+                <li><a href="links" class="button">More</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </section>
 
 
@@ -361,9 +393,16 @@ permalink: /index.html
       background-size: cover;
       background-color: #FFF;
     }
+
+    .mxx {
+      margin-right: 1.3rem !important;
+      margin-left: 0rem !important;
+      font-size: 16pt;
+      line-height: 1.7;
+    }
   </style>
 
-  <footer class="footer-block footer-large">
+  <footer class="footer-block">
     <div class="container">
       <div class="row align-items-top text-center mb-5">
         <div class="col-12 col-lg-5 ms-auto text-lg-left mt-4 mt-lg-0 text-start">
@@ -389,8 +428,7 @@ permalink: /index.html
 
         <div class="col-12 col-lg-2 ms-auto text-lg-left mt-4 mt-lg-0 text-start ">
           <h3><strong>Follow me</strong></h3>
-          <p class="slogen">
-
+          <p>
             <a href="{{site.author.googlescholar}}" class="mxx"><i class="bx bxs-graduation" aria-hidden="true"></i></a>
             <a href="{{site.author.linkedin}}" class="mxx"><i class="bx bxl-linkedin-square" aria-hidden="true"></i></a>
             <a href="https://github.com/ivyee17" class="mxx"><i class="bx bxl-github" aria-hidden="true"></i></a>
@@ -398,21 +436,13 @@ permalink: /index.html
                 aria-hidden="true"></i></a>
             <a href="https://www.froala.com" class="mxx" aria-disabled="true"><i class="bx bxl-facebook"
                 aria-hidden="true"></i></a>
-            <a href="https://www.froala.com" class="mxx" aria-disabled="true"><i class="bx bxl-instagram"
-                aria-hidden="true"></i></a>
+            <a href="https://www.froala.com" class="mxx" aria-disabled="true"><i class="bx bxl-instagram" aria-hidden="true"></i></a>
           </p>
         </div>
-        <style>
-          .mxx {
-            margin-right: 1.3rem !important;
-            margin-left: 0rem !important;
-            font-size: 16pt;
-            line-height: 1.7;
-          }
-        </style>
+
       </div>
       <div class="row mt-3">
-        <div class="col text-center">
+        <div class="col text-center mx-lg-4">
           &copy; Wu Wenhan. Inspired by <a href="www.froala.com/design-blocks">design-blocks</a> and <a
             href="https://bootstrapmade.com/">BootstrapMade</a>.
           Template based on <a href="https://html5up.net">Stellar</a> and <a

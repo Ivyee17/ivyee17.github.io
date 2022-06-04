@@ -1,0 +1,24 @@
+- type: Music Related
+  links:
+  - name: Music downloader
+    ref: https://music.myepoch.cn/
+- type: Coding Platform
+  links:
+  - name: Leetcode
+    ref: https://cn.leetcode.com/
+  - name: Java Guide
+    ref: https://github.com/Snailclimb/JavaGuide
+- type: Hobbies
+  links:
+  - name: Da Vinci (Click the colorist guide)
+    ref: https://www.blackmagicdesign.com/products/davinciresolve/training
+  - name: Adobe CP (delayed)
+    ref: http://www.adobeacp.com/portal/subject.html
+  - name: NTCE Enrollment Link
+    ref: https://www.jszg.edu.cn/portal/qualification_cert/dynamics?id=21691
+  - name: SCA
+    ref: https://sca.coffee/
+  - name: Java SE Programmer I (1Z0-808)
+    ref: https://education.oracle.com/oracle-certified-associate-java-se-8-programmer/trackp_333
+  - name: Java SE Programmer II (1Z0-809)
+    ref: https://education.oracle.com/oracle-certified-professional-java-se-8-programmer/trackp_357
