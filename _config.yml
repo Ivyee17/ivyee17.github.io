@@ -26,7 +26,7 @@ author:
   bio              : "Student"
   location         : "East China Normal <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;University"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=NBSeJLkAAAAJ&hl=en&oi=sra"
   email            :  "1020645987@qq.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
