@@ -9,6 +9,15 @@
  *  - https://twitter.com/mmistakes
  *
 */
+@mixin shadow-style {
+    box-shadow: #32323254 6px 8px 8px -2px; 
+    // rgb(50 50 50 / 33%)
+    padding: 0px 20px;
+    margin: 25px 0px;
+    font-size: 15px;
+    border: 1px  solid #cecece;
+    border-radius: 7px;
+}
 
 @import "essay-page/vendor/breakpoint/breakpoint"; // media query mixins
 @import "essay-page/variables";
@@ -40,12 +49,7 @@
 @import "essay-page/vendor/magnific-popup/magnific-popup";
 @import "essay-page/print";
 
-.shadow-ss {
-    box-shadow: #32323254 6px 8px 8px -2px; 
-    // rgb(50 50 50 / 33%)
-    padding: 0px 20px;
-    margin: 25px 0px;
-    font-size: 15px;
-    border: 1px  solid #cecece;
-    border-radius: 7px;
+
+.shadow-ss{
+    @include shadow-style;
 }

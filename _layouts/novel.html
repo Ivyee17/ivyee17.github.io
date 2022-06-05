@@ -41,10 +41,11 @@
             content: "";
         }
 
-        pre,
+
         blockquote {
-            border: 1px solid #999;
-            page-break-inside: avoid;
+            /* border: 1px solid #999; */
+            /* page-break-inside: avoid; */
+            margin: 0
         }
 
         thead {
@@ -75,17 +76,20 @@
 
     html {
         font-size: 12px;
+        margin: 0 25px;
     }
 
     @media screen and (min-width: 32rem) and (max-width: 48rem) {
         html {
             font-size: 15px;
+            margin: 0 25px;
         }
     }
 
     @media screen and (min-width: 48rem) {
         html {
             font-size: 16px;
+            margin: 0 25px;
         }
     }
 
@@ -95,9 +99,9 @@
 
     p,
     .splendor-p {
-        font-size: 1rem;
-        margin-bottom: 1.3rem;
-        text-indent:  35px;
+        font-size: 16px;
+        margin-top: 1.3rem;
+        text-indent: 28px;
     }
 
     h1,
@@ -116,22 +120,25 @@
     h1,
     .splendor-h1 {
         margin-top: 0;
-        font-size: 2rem;
+        font-size: 1rem;
+        font-weight: 700;
     }
 
     h2,
     .splendor-h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
     }
 
     h3,
     .splendor-h3 {
-        font-size: 1.4rem;
+        font-size: 0.8rem;
     }
 
     h4,
     .splendor-h4 {
-        font-size: 1.3rem;
+        font-size: 0.7rem;
     }
 
     h5,
@@ -170,34 +177,82 @@
 
     body {
         color: #444;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Comic Sans MS', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin: 0;
         max-width: 100%;
     }
-
+    ul p{
+        text-indent: 0;
+    }
+    img{
+        margin-left: -30px;
+    }
     /* === A bit of a gross hack so we can have bleeding divs/blockquotes. */
 
     p,
     *:not(div):not(img):not(body):not(html):not(li):not(blockquote):not(p) {
         margin: 1rem auto 1rem;
-        max-width: 36rem;
+        max-width: 30rem;
         padding: .25rem;
     }
 
     div {
         width: 100%;
+
     }
 
     div img {
         width: 100%;
     }
 
-    blockquote p {
-        font-size: 1.5rem;
-        font-style: italic;
-        margin: 1rem auto 1rem;
-        max-width: 48rem;
+    blockquote {
+        margin: 50px auto 75px;
     }
+
+    blockquote p {
+        background: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        margin: 26px auto 0;
+        max-width: 550px;
+        /* min-height: 300px; */
+        padding: 24px;
+        position: relative;
+        width: 80%;
+        text-indent: 0;
+        /* content: "aaa" */
+    }
+
+    blockquote p:before,
+    blockquote p:after {
+        content: "";
+        height: 98%;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+    }
+
+    blockquote p:before {
+        background: #fafafa;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+        left: -5px;
+        top: 4px;
+        transform: rotate(-2.7deg);
+        -webkit-transform: rotate(-2.7deg);
+        -moz-transform: rotate(-2.7deg);
+    }
+
+    blockquote p:after {
+        background: #f6f6f6;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        right: -3px;
+        top: 1px;
+        transform: rotate(1.4deg);
+        -webkit-transform: rotate(1.4deg);
+        -moz-transform: rotate(1.4deg);
+    }
+
 
     li {
         margin-left: 2rem;
@@ -206,7 +261,7 @@
     /* Counteract the specificity of the gross *:not() chain. */
 
     h1 {
-        padding: 1rem 0 !important;
+        padding: 40px 0px 18px 57px !important;
     }
 
     /*  === End gross hack */
@@ -214,7 +269,7 @@
     p {
         color: #555;
         height: auto;
-        line-height: 1.45;
+        line-height: 2;
     }
 
     pre,
@@ -229,22 +284,99 @@
         padding: 1.125em;
     }
 
-    a,
-    a:visited {
-        color: #3498db;
-    }
 
     a:hover,
     a:focus,
     a:active {
-        color: #2980b9;
+        color: #268f04;
+    }
+
+    .main {
+        max-width: 30rem;
+        margin: auto;
+    }
+
+    .decor {
+        background: linear-gradient(-55deg, transparent 49%, #268f04 49.5%, #268f04 50.5%, transparent 51%);
+        height: 3rem;
+        width: 5rem;
+        position: absolute;
+        top: 38px;
+        /* left: 25px; */
+        text-indent: 6px;
+
+    }
+
+    #mySidenav a {
+        position: absolute;
+        right: -45px;
+        transition: 0.3s;
+        padding: 3px;
+        width: 50px;
+        text-indent: 10px;
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        border-radius: 5px 0 0 5px;
+    }
+
+    #mySidenav a:hover {
+        right: 0px;
+    }
+
+    #content {
+        top: 15px;
+        background-color: #268f04;
+    }
+
+    #share {
+        top: 60px;
+        background-color: #268f04;
+    }
+
+    button {
+        padding-bottom: 7px !important;
+        border-radius: 10px;
+        border: 2px solid #268f04;
+        float: right;
+        background: white;
+        font-weight: 700;
+        margin-right: 10px !important;
+        margin-top: 30px !important;
+        font-family: 'Comic Sans MS', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    button a {
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
     }
 </style>
 
 <body>
-    <div>
+
+    <!-- <div id="mySidenav" class="sidenav">
+        <a href="/novels/toc" id="content">目录</a>
+        <a href="/novels/toc" id="share">分享</a> 
+
+    </div> -->
+    <div class="main">
+        <div class="decor">LP{{page.index }}</div>
+        <button><a href="/novels/toc">目录</a></button>
         {{content}}
     </div>
+
 </body>
 
 </html>
+<script>
+    let el = document.getElementsByTagName('blockquote');
+    for (let e of el) {
+        let tt = e.getElementsByTagName('p')[0].innerHTML
+        tts = tt.split('\n')
+        tt = tt.replace(/\n/g, '<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+        tt = "作者的话：<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + tt
+        e.getElementsByTagName('p')[0].innerHTML = tt;
+    }
+</script>

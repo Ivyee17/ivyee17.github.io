@@ -92,11 +92,11 @@ author_profile: true
 
 {% for collection in site.collections %}
 {% for post in collection.docs %}
-{% unless collection.output == false or collection.label == "posts" %}
+{% if collection.label == "essays" or collection.label == "publications" %}
 <div class="posts-cat2" name="{{ collection.label | slugify }}">
 {% include essay-page/archive-single.html %}
 </div>
-{% endunless %}
+{% endif %}
 {% endfor %}
 {% endfor %}
 
@@ -176,6 +176,7 @@ author_profile: true
 <!-- posts -->
 
 {% for collection in site.collections %}
+{% if collection.label == "essays" or collection.label == "publications" %}
 {% for post in collection.docs %}
 {% unless collection.output == false  %}
 <div name="posts-cat22" class="{{ post.tags | join:' ' }}">
@@ -183,4 +184,11 @@ author_profile: true
 </div> 
 {% endunless %}
 {% endfor %}
+{%endif%}
 {% endfor %}
+<script>
+  allels = document.getElementsByName('posts-cat22');
+    for (el of allels) {
+      el.style.display = "none";
+    };
+</script>

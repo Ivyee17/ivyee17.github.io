@@ -95,10 +95,6 @@ defaults:
       type: novels
     values:
       layout: novel
-      _options:
-        content:
-          width: 1500
-          height: 2500
   - scope:
       path: ""
       type: publications

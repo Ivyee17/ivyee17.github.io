@@ -68,6 +68,21 @@
 /*
    Author profile and links
    ========================================================================== */
+   .author__info{
+    //  @include shadow-ss;
+    // 
+    @include shadow-style;
+      border: 1px solid lightgray; 
+      padding: 20px; 
+      border-radius: 10px;
+      
+      @include breakpoint($large) {
+        box-shadow:0 0;
+        padding: initial;
+        border:0;
+
+      }
+   }
 
 .author__avatar {
   display: table-cell;
