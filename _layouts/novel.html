@@ -198,7 +198,7 @@
     }
 
     div {
-        width: 100%;
+        /* width: 100%; */
 
     }
 
@@ -304,7 +304,7 @@
         position: absolute;
         top: 38px;
         /* left: 25px; */
-        text-indent: 6px;
+        text-indent: 0px;
 
     }
 
@@ -336,7 +336,7 @@
     }
 
     button {
-        padding-bottom: 7px !important;
+        padding-bottom: 5px !important;
         border-radius: 10px;
         border: 2px solid #268f04;
         float: right;
@@ -380,4 +380,9 @@
         tt = "作者的话：<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + tt
         e.getElementsByTagName('p')[0].innerHTML = tt;
     }
+    let h1ele=document.getElementsByTagName('h1')[0]
+    let news=document.createElement('div')
+    news.style='text-align: end;margin-right: 9px;font-size: small;'
+    news.innerHTML='◻ 忆·墨'
+    h1ele.after(news)
 </script>

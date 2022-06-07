@@ -1,5 +1,7 @@
 ---
 permalink: /index.html
+introduction: Hey!
+details: What's up, and how's your day?
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -66,8 +68,8 @@ permalink: /index.html
         <div class='minutes'></div>
       </div>
       <div class="col-lg-6 ms-auto" style="line-height: 2;margin-top: 80px;">
-        <h1>Welcome!</h1>
-        <p>Start your exploration from here.</p>
+        <h1>{{page.introduction}}</h1>
+        <p>{{page.details}}</p>
         <!-- <span class="typed" data-typed-items="Wu Wenhan"></span> -->
         <!-- <div class="social-links"> -->
         <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -136,13 +138,13 @@ permalink: /index.html
       }
     </style>
     <section id="intro" class="intro">
-      <div class="container p-5" data-aos="fade-up" data-aos-duration="1000" style="background: #ffffffbb;">
+      <div class="container p-4 p-md-5" data-aos="fade-up" data-aos-duration="1000" style="background: #ffffffbb;">
 
         <div class="pb-4 row text-center justify-content-center " data-aos="fade-left" data-aos-delay="1000"
           data-aos-duration="1000">
           <div class="col">
-            <h1 class="major">Hi, welcome to my personal page!</h1>
-            <p>Hope you'll have a nice experience here.</p>
+            <h1 class="major">Welcome to my chan... personal page!</h1>
+            <p>Glad to meet you here with an upcoming nice experience. </p>
           </div>
         </div>
 
@@ -234,7 +236,7 @@ permalink: /index.html
                   </p>
                 </div>
                 <div class="col-12 col-sm-12 pt-sm-4" data-aos="fade-left"
-                  style=" display: flex; justify-content: flex-end;padding-right: 40px;" data-aos-delay="1000"
+                  style=" display: flex; justify-content: flex-end;" data-aos-delay="1000"
                   data-aos-duration="4000">
                   <ul class="actions white">
                     <li><a href="academic" class="button">View Here</a></li>
@@ -388,7 +390,7 @@ permalink: /index.html
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizelegibility;
-      padding: 7.5rem 0;
+      /* padding: 7.5rem 0; */
       position: relative;
       background-size: cover;
       background-color: #FFF;
@@ -402,7 +404,7 @@ permalink: /index.html
     }
   </style>
 
-  <footer class="footer-block">
+  <footer class="footer-block p-3 p-lg-5">
     <div class="container">
       <div class="row align-items-top text-center mb-5">
         <div class="col-12 col-lg-5 ms-auto text-lg-left mt-4 mt-lg-0 text-start">
@@ -441,9 +443,9 @@ permalink: /index.html
         </div>
 
       </div>
-      <div class="row mt-3">
+      <div class="row mt-3 mb-5 mb-lg-4">
         <div class="col text-center mx-lg-4">
-          &copy; Wu Wenhan. Inspired by <a href="www.froala.com/design-blocks">design-blocks</a> and <a
+          &copy; Wu Wenhan. Inspired by <a href="https://www.froala.com/design-blocks/">design-blocks</a> and <a
             href="https://bootstrapmade.com/">BootstrapMade</a>.
           Template based on <a href="https://html5up.net">Stellar</a> and <a
             href="http://startbootstrap.github.io/startbootstrap-clean-blog-jekyll/">jekyll clean theme</a>.
