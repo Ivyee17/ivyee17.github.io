@@ -27,9 +27,11 @@
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2em;
+    margin-top: 20px;
     max-width: 100%;
-    padding: 0 1em 2em;
+    padding-bottom: 25px;
+
+
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -55,7 +57,8 @@
 
 .page__footer-copyright {
   font-family: $global-font-family;
-  font-size: $type-size-7;
+  font-size: $type-size-6;
+  text-align: center;
 }
 
 .page__footer-follow {

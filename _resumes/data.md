@@ -3,7 +3,7 @@ layout: resume-page/template-site
 data:
 - id: home
   page: main.html
-  data: main
+  data: main-data
 - id: aboutme # this will be used as div's id, must be unique! Also, this is for url xxx?{id}
   page: aboutme.html # this is the path in _includes/resume_page folder
   data: aboutme # this is the path in _data/resume-page folder
@@ -13,10 +13,10 @@ data:
   data: education
 - id: skills
   page: skill.html
-  data: skill-java
+  data: skill-data
 - id: experiences
   page: resume.html
-  data: experience
+  data: experience-data
 - id: awards
   page: honor.html
   data: honor

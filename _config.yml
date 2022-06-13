@@ -56,12 +56,9 @@ author:
   xing             :
   youtube          : "youtube.com"
   wikipedia        :
+  gitee            : "wenhan17" ##self-defined val!!
 
 
-social:
-  name: Hydra Template
-  links:
-    - https://github.com/CloudCannon/hydra-jekyll-template
 
 # -----
 # Build

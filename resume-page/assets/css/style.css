@@ -585,6 +585,10 @@ section {
   transition: 0.9s;
   background-color: #34b7a7;
 }
+.skills ul{
+  line-height: 2;
+  margin-bottom: 40px;
+}
 
 /*--------------------------------------------------------------
 # Facts

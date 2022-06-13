@@ -29,14 +29,17 @@
                 <li><i class="bi bi-rounded-right"></i> <strong>{% if page.lang == 'zh' %}个人主页：{% else %} Website:{% endif %}</strong> {{ page.siteurl }} </li>
                 <li><i class="bi bi-rounded-right"></i> <strong>{% if page.lang == 'zh' %}电话：{% else %} Tel:{% endif %}</strong> {{ page.tel }}</li>
                 <li><i class="bi bi-rounded-right"></i> <strong>{% if page.lang == 'zh' %}所在城市：{% else %} City:{% endif %}</strong> {{ page.city }}</li>
+                <li><i class="bi bi-rounded-right"></i> <strong>{% if page.lang == 'zh' %}微信：{% else %} WeChat:{% endif %}</strong> {{ page.wechat }}</li>
+                <li><i class="bi bi-rounded-right"></i> <strong>{% if page.lang == 'zh' %}QQ：{% else %} QQ:{% endif %}</strong> {{ page.qq }}</li>
               </ul>
             </div>
             <div class="col-lg-6">
               <ul>
-                <li><i class="bi bi-rounded-right"></i> <strong>{% if page.lang == 'zh' %}微信：{% else %} WeChat:{% endif %}</strong> {{ page.wechat }}</li>
-                <li><i class="bi bi-rounded-right"></i> <strong>{% if page.lang == 'zh' %}QQ：{% else %} QQ:{% endif %}</strong> {{ page.qq }}</li>
                 <li><i class="bi bi-rounded-right"></i> <strong>{% if page.lang == 'zh' %}邮箱：{% else %} E-mail:{% endif %}</strong> {{ page.email }}</li>
                 <li><i class="bi bi-rounded-right"></i> <strong>{% if page.lang == 'zh' %}地址：{% else %} Address:{% endif %}</strong> {{ page.address }}</li>
+                <li><i class="bi bi-rounded-right"></i> <strong>{% if page.lang == 'zh' %}Google Scholar：{% else %} Google Scholar:{% endif %}</strong> {{ site.author.googlescholar }}</li>
+                <li><i class="bi bi-rounded-right"></i> <strong>{% if page.lang == 'zh' %}GitHub：{% else %} GitHub:{% endif %}</strong> https://github.com/{{ site.author.github }}/</li>
+                <li><i class="bi bi-rounded-right"></i> <strong>{% if page.lang == 'zh' %}Gitee：{% else %} Gitee:{% endif %}</strong> https://gitee.com/{{ site.author.gitee }}/</li>
               </ul>
             </div>
           </div>

@@ -33,17 +33,22 @@ projects:
   - 参考时下最新的页面设计样例，对页面进行美观改进。使用aos动画库对动画元素进行设计。使用vcf和Canvas对名片进行生成，采用并优化Git Card的Git Repo信息卡片。
   - 由于GitHub Pages对Jekyll插件支持数量较少，本次实现中尽量降低第三方插件的依赖，从而实现gh-env的自动配置与部署。
   - （进行中）使用Gitment进行文章与组会讨论功能。
-- time: "2021.04 - 2021.05"
-  title: Ticketing仿大麦网在线票务平台
-  content:
-  - 软件架构设计课程项目。通过对大麦网上进行数据提取，进而获取演出信息。采用Spring Security进行安全校验，并使用Redis进行大并发量下的快速运行。采用分布式的方式进行部署和运行，并进行子网的配置。
-  - 在日志方面使用Elastic search、logstash和kibana进行日志的分析和提取，方便定位开发问题。
 - time: "2020.11 - 2021.03"
   title: 基于Tensorflow的RealNVP模型迁移
   content:
   - 使用RealNVP对CIFAR-10中的图片进行流处理，使其符合一定的数据分布。
   - 基于Tensorflow将RealNVP迁移至华为昇腾AI平台，并进行算子匹配。
   - 实现了相关迁移代码适配与离线推理，并合并入相关开源项目。
+- time: "2021.04 - 2021.05"
+  title: Ticketing仿大麦网在线票务平台
+  content:
+  - 软件架构设计课程项目。通过对大麦网上进行数据提取，进而获取演出信息。采用Spring Security进行安全校验，并使用Redis进行大并发量下的快速运行。采用分布式的方式进行部署和运行，并进行子网的配置。
+  - 在日志方面使用Elastic search、logstash和kibana进行日志的分析和提取，方便定位开发问题。
+- time: "2021.03 - 2021.04"
+  title: 交通灯方向数据提取与分析
+  content:
+  - 使用Python对图片数据进行预处理和直方图生成，采用SIFT进行交通等方向匹配。
+  - 在数据集中使用真实环境下的信号灯作为数据，以保证数据的有效性。
 - time: "2019.04 - 2020.06"
   title: "基于自动重构算法实现的设计阶段代码复杂度降解工具"
   content:
@@ -51,46 +56,26 @@ projects:
   - 该平台基于Spring Boot(Jama)和Vue.js(Echarts)开发，使用MySQL和Redis数据库进行持久化存储。同时，还将提供Graphviz的桌面版，使用户可以离线进行操作。
   - 本人主要负责产品和数据库设计、代码实现及部署、接口调用、客户端展示、单元测试等。
   - 在KSEM 2021(CCF-C)上以第一作者发表论文：Analyzing and Recommending Development Order Based on Design Class Diagram，实现了相关代码并申请了软件著作权。
-- time: "2020.03 - 2020.05"
-  title: AchieveIt项目管理平台系统测试项目
-  content:
-  - 采用Page Object模式开发，对每个页面的每个元素进行测试。
-  - 本人主要负责页面代码编写、测试代码编写、服务器部署、参数化配置等。
-  - 采用多种设计模式对浏览器部分进行设置，并结合Hub和Node达到分布式部署，以达到多浏览器执行的目的。
-- time: "2019.12 - 2020.01"  
-  title: CSP与Maude工具进行形式化验证
+- time: "2018.02 - 2018.06"
+  title: 面向学生的财务报销管理平台
   content: 
-  - 使用CSP验证Authy中2FA的正确性，通过对协议进行模型抽象，从而使其能够进行有效的形式化验证。
-  - 使用Maude工具验证PCMS协议的正确性。通过Primitives的设计及相关推理op、eq编写，验证协议的可靠性。
-  - 在实际的代码操作同时，还参考相关论文的实现进行优化，并将实现结果整理成论文形式。
-- time: "2019.03 - 2019.04"
-  title: City-news-mashup城市新闻搜索平台
-  content: 
-  - 课程项目。基于Vue.js前端语言开发，基于mashup的整合平台，用于聚合城市信息、新闻信息与搜索模块，项目部署于AWS EC2服务器中。
-  - 本人负责软件需求、页面设计、代码编写、API调用、文档管理等工作。在实际部署时使用JSONP解决相关的跨域CORS问题，并解决信息搜索量和API调用次数限制等工程化方案。
-- time: "2018.05 - 2018.10"
-  title: "Classer Go高校课程综合化信息平台"
+  - 基于Spring Boot和BootStrap开发，使用MySQL数据库。
+  - 本人主要负责数据库的设计、CURD操作、MyBatis中间件编写。
+- time: "2018.07 - 2018.08"
+  title: MNIST数据集下的算法比较
   content:
-  - 基于微信开发平台开发。该项目通过结合学生的课程信息，提供集合课程表、课程元素、课程资料、考试复习等多方位一体的信息综合平台，使学生能够获得更好的用户体验。通过SWOT分析等技术对项目进行有效性支持。本人负责项目创意整理与改进、课程简介页面的开发、文档编写等工作。
-  - 项目获中国高校计算机大赛（小程序类）华东赛区二等奖。
-- time: "2017.09 - 2018.10" # 交通信号灯 大麦网 - 在data中
-  title: "\"云游\"--基于校园的新型一体化旅行模式探索"
-  content:
-  - 前端基于Android框架，后端基于Spring Boot开发，面向移动端的APP软件。
-  - 本人前期为项目负责人，负责项目创意设计及计划；后期负责标签功能原型设计、开发与实现。
-  - 项目中期获得华东师范大学国家级创新创业项目，并顺利结项。
+  - 课程作业。基于Python语言实现，描述PCA、KNN、核函数下对MNIST数据集的训练模型。
+
+
+
 
 
 
 outcomes:
 - title: "Tencent WeOpen Star Contributor (No. 0020)"
-  time: "2022.05 - 2022.06"
-  place: "Rank: <a href=\"https://github.com/weopenprojects/WeOpen-Star/blob/main/Contributors/ranking-list_May.md\">GitHub Repo Link</a> / Publishment: <a href=\"https://mp.weixin.qq.com/s/zGNU8Szh_rtrw9yyQ01AAQ\">WeChat Subscription @ WeOpen Star</a>"
-  details: "WeOpen Star: (1) Thoughts and ideas for related project at <a href=\"https://blog.51cto.com/u_13647519\">51CTO</a>, (2) experiences on the past open source project and (3) the improvements to the related projects. <br/> Best Notes: The demand discussion for Nebula-LINQ / experiences and summary for builtin C++ functions and translation work. <br/> <h4 class=num_anim>2</h4> nd top contributor in May / <h4 class=num_anim>659</h4> readings "
-- title: "OpenMLDB Active Contributor"
-  time: "2022.04 - 2022.05"
+  time: "2022.05"
   place: "OpenMLDB Git: <a href=\"https://github.com/4paradigm/OpenMLDB\">https://github.com/4paradigm/OpenMLDB</a>"
-  details: "OpenMLDB: (1) 3 builtin function for SQL, (2) compile warning and (3) Javadoc fix. <br/>Merged to main branch. Achieved the certifications for these contributions.<br/><h4 class=num_anim>6</h4> PR / <h4  class=num_anim>6</h4> issues / <h4  class=num_anim>88</h4> commits / <h4  class=num_anim>110</h4> conversations "
+  details: "OpenMLDB: (1) 3 builtin function for SQL, (2) compile warning and (3) Javadoc fix. <br/>Merged to main branch. <br/><h4 class=num_anim>6</h4> PR / <h4  class=num_anim>6</h4> issues / <h4  class=num_anim>88</h4> commits / <h4  class=num_anim>110</h4> conversations "
 - title: "Chenchao Wang, Chao Peng, Mengdan Wang, Rui Yang, Wenhan Wu, Qilin Rui, Neal N. Xiong: CTHGAT: Category-aware and Time-aware Next Point-of-Interest via Heterogeneous Graph Attention Network. SMC 2021: 2420-2426"
   time: "2021/10/17"
   place: "2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC 2021)"
@@ -99,13 +84,12 @@ outcomes:
   time: "2021/08/16"
   place: "The 14th International Conference on Knowledge Science, Engineering and Management (KSEM 2021)"
   details: "Written and published as the first author."
+
 - title: "Huawei Ascend Model Zoo Contributor"
   time: "2020.11 - 2021.03"
   place: "Modelzoo Git: <a href=\"https://gitee.com/ascend/modelzoo-his\">https://gitee.com/ascend/modelzoo-his</a>"
   details: "RealNVP Flow Model: (1) training, (2) testing and (3) offline inference. <br/>Merged to main branch. <br/><h4 class=num_anim>5</h4> PR / <h4  class=num_anim>6</h4> issues "
-- title: "Federated Learning Seminars"
-  time: "2020/09 - 2021/01"
-  details: "Discussed about the recent essays and technologies related to the federated learning across different labortories. Shared the essays about what is learned and made 3 reports."
+
 - title: "软件著作权第5530258号"
   time: "2020/03/14"
   place: "登记号：2020SR0651562"
