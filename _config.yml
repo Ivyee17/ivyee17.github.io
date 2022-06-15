@@ -2,28 +2,22 @@
 # Site
 
 title: "Wenhan's Home"
+description: "My homepage" # Jusr for SEO default value.
 url: "https://ivyee17.github.io"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
 
+# ---
+# Author
 
-# self-intro page
-name: "Wu Wenhan"
-position: "Student @ ECNU"
-slogen: "
-Life is not a check-list of acquisition or achievement. Your qualifications, your CV, are not your life. Life is difficult, and complicated, and beyond anyone’s total control, and the humility to know that will enable you to survive its vicissitudes."
+slogen: "Life is not a check-list of acquisition or achievement. Your qualifications, your CV, are not your life. Life is difficult, and complicated, and beyond anyone’s total control, and the humility to know that will enable you to survive its vicissitudes."
 
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo:  "/images/essay-page/profile.png"   # must have! Do like this: /images/siteicon.png
-description:
-
-# Site Author
 author:
   name             : "Wu Wenhan"
-  avatar           : "/essay-page/profile.png"
-  bio              : "Student"
+  avatar           : "/assets/profile.png"
+  position         : "Student @ ECNU"
   location         : "East China Normal <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;University"
   employer         :
   pubmed           : 
@@ -120,6 +114,9 @@ defaults:
       layout: resume-page/template2
 
 
+# ---
+# Jekyll Config
+
 jekyll-archives:
   enabled:
     - categories
@@ -137,32 +134,6 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENCE
-
-# -----------
-# CloudCannon
-
-social_icons:
-  - Facebook
-  - Google Plus
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - RSS
-
-_comments:
-  map: Update the map location and display settings.
-  latitude: Coordinates for the center marker on the map.
-  longitude: Coordinates for the center marker on the map.
-  zoom: The zoom level for the map.
-  pricing_table: Update the information in the pricing tables.
-  highlight: Emphasis the text
-  color: The background colour used in the plan name and call to action.
-  new_window: Open link in new window
-
-#theme: jekyll-theme-leap-day
 
 sass:
   sass_dir: _sass
