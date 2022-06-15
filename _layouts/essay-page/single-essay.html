@@ -127,7 +127,8 @@ layout: essay-page/default
         owner: 'ivyee17',
         admin: ['ivyee17'],
         id: location.pathname,      
-        distractionFreeMode: false 
+        distractionFreeMode: false,
+        proxy:'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token'
       });
 
       gitalk.render('gitalk-container');
