@@ -1,6 +1,7 @@
+intro: 这里描述本人的专业技能，百分比是相对的。学无止境，仍有很多值得我学习的技术和知识。
 skills:
 - name: java
-  score: 85
+  score: 86
 - name: MySQL
   score: 80
 - name: Python

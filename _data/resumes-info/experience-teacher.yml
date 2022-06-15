@@ -42,12 +42,15 @@ projects:
 
 
 
-
 outcomes:
 - title: "Tencent WeOpen Star Contributor (No. 0020)"
-  time: "2022.05"
+  time: "2022.05 - 2022.06"
+  place: "Rank: <a href=\"https://github.com/weopenprojects/WeOpen-Star/blob/main/Contributors/ranking-list_May.md\">GitHub Repo Link</a> / Publishment: <a href=\"https://mp.weixin.qq.com/s/zGNU8Szh_rtrw9yyQ01AAQ\">WeChat Subscription @ WeOpen Star</a>"
+  details: "WeOpen Star: (1) Thoughts and ideas for related project at <a href=\"https://blog.51cto.com/u_13647519\">51CTO</a>, (2) experiences on the past open source project and (3) the improvements to the related projects. <br/> Best Notes: The demand discussion for Nebula-LINQ / experiences and summary for builtin C++ functions and translation work. <br/> <h4 class=num_anim>2</h4> nd top contributor in May / <h4 class=num_anim>659</h4> readings "
+- title: "OpenMLDB Active Contributor"
+  time: "2022.04 - 2022.05"
   place: "OpenMLDB Git: <a href=\"https://github.com/4paradigm/OpenMLDB\">https://github.com/4paradigm/OpenMLDB</a>"
-  details: "OpenMLDB: (1) 3 builtin function for SQL, (2) compile warning and (3) Javadoc fix. <br/>Merged to main branch. <br/><h4 class=num_anim>6</h4> PR / <h4  class=num_anim>6</h4> issues / <h4  class=num_anim>88</h4> commits / <h4  class=num_anim>110</h4> conversations "
+  details: "OpenMLDB: (1) 3 builtin function for SQL, (2) compile warning and (3) Javadoc fix. <br/>Merged to main branch. Achieved the certifications for these contributions.<br/><h4 class=num_anim>6</h4> PR / <h4  class=num_anim>6</h4> issues / <h4  class=num_anim>88</h4> commits / <h4  class=num_anim>110</h4> conversations "
 - title: "Chenchao Wang, Chao Peng, Mengdan Wang, Rui Yang, Wenhan Wu, Qilin Rui, Neal N. Xiong: CTHGAT: Category-aware and Time-aware Next Point-of-Interest via Heterogeneous Graph Attention Network. SMC 2021: 2420-2426"
   time: "2021/10/17"
   place: "2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC 2021)"
@@ -56,12 +59,13 @@ outcomes:
   time: "2021/08/16"
   place: "The 14th International Conference on Knowledge Science, Engineering and Management (KSEM 2021)"
   details: "Written and published as the first author."
-
 - title: "Huawei Ascend Model Zoo Contributor"
   time: "2020.11 - 2021.03"
   place: "Modelzoo Git: <a href=\"https://gitee.com/ascend/modelzoo-his\">https://gitee.com/ascend/modelzoo-his</a>"
   details: "RealNVP Flow Model: (1) training, (2) testing and (3) offline inference. <br/>Merged to main branch. <br/><h4 class=num_anim>5</h4> PR / <h4  class=num_anim>6</h4> issues "
-
+- title: "Federated Learning Seminars"
+  time: "2020/09 - 2021/01"
+  details: "Discussed about the recent essays and technologies related to the federated learning across different labortories. Shared the essays about what is learned and made 3 reports."
 - title: "软件著作权第5530258号"
   time: "2020/03/14"
   place: "登记号：2020SR0651562"

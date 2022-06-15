@@ -97,9 +97,23 @@ layout: essay-page/default
       {% include essay-page/post_pagination.html %}
     </div> 
 
-    {% if site.comments.provider and page.comments %}
+    <!-- {% if site.comments.provider and page.comments %}
       {% include essay-page/comments.html %} 
-    {% endif %}
+    {% endif %} -->
+    <div id="gitmentContainer"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    var gitment = new Gitment({
+        owner: 'ivyee17',
+        repo: 'ivyee17.github.io',
+        oauth: {
+            client_id: '7a4376583fd66885d598',
+            client_secret: '3d59cd5522e9231d5b920c16881ab0202ffa2cea',
+        },
+    });
+    gitment.render('gitmentContainer');
+    </script>
   </article>
 
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
@@ -115,4 +129,6 @@ layout: essay-page/default
       </div>
     </div> 
   {% endif %}
+
+
 </div>
