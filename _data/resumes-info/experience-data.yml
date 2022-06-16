@@ -30,9 +30,8 @@ projects:
   - 即本页面所在项目。基于原生HTML和Bootstrap规范设计的github.io的个人主页，采用响应式布局（同时适配手机 / 电脑端）与原生HTML / CSS制作。
   - 调研不同博客模板（例如Hexos、Gatsby、Jekyll等）并确定实现框架。设计有效的yaml格式，基于Liquid语法和Jekyll特性，使其能有效的匹配相关的个人信息，并设计了对应的数据与页面分离的布局。
   - 引入c-player等库函数用于辅助支持，从而更好的进行参数化，并对原库进行必要的源码改进（基于Typescript）。相关仓库可在https://github.com/Ivyee17/cPlayer中查询。
-  - 参考时下最新的页面设计样例，对页面进行美观改进。使用aos动画库对动画元素进行设计。使用vcf和Canvas对名片进行生成，采用并优化Git Card的Git Repo信息卡片。
+  - 参考时下最新的页面设计样例，对页面进行美观改进。使用aos动画库对动画元素进行设计。使用vcf和Canvas对名片进行生成，采用并优化Git Card的Git Repo信息卡片，使用Gitalk进行文章与组会讨论功能。
   - 由于GitHub Pages对Jekyll插件支持数量较少，本次实现中尽量降低第三方插件的依赖，从而实现gh-env的自动配置与部署。
-  - （进行中）使用Gitment进行文章与组会讨论功能。
 - time: "2020.11 - 2021.03"
   title: 基于Tensorflow的RealNVP模型迁移
   content:
