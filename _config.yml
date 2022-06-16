@@ -2,7 +2,7 @@
 # Site
 
 title: "Wenhan's Home"
-description: "My homepage" # Jusr for SEO default value.
+description: "My homepage" # Just for SEO default value.
 url: "https://ivyee17.github.io"
 baseurl:
 google_analytics_key:
@@ -16,7 +16,7 @@ slogen: "Life is not a check-list of acquisition or achievement. Your qualificat
 
 author:
   name             : "Wu Wenhan"
-  avatar           : "/assets/profile.png"
+  avatar           : "images/profile.png"
   position         : "Student @ ECNU"
   location         : "East China Normal <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;University"
   employer         :
@@ -38,7 +38,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "https://www.linkedin.cn/injobs/in/wu-wenhan-52453a206"
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : # "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -46,11 +46,11 @@ author:
   tumblr           :
   twitter          : # "replacethistwitterhandle"
   vine             :
-  weibo            : "weibo.com"
+  weibo            : # "weibo.com"
   xing             :
-  youtube          : "youtube.com"
+  youtube          : # "youtube.com"
   wikipedia        :
-  gitee            : "wenhan17" ##self-defined val!!
+  gitee            : "wenhan17" ## self-defined val!! not compat with essay-page sidebar!
 
 
 
