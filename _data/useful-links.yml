@@ -1,7 +1,11 @@
 - type: Music Related
   links:
-  - name: Music downloader
+  - name: Music downloader (Netease)
     ref: https://music.myepoch.cn/
+  - name: Single Song Search
+    ref: https://www.musicenc.com/
+  - name: Albums Download
+    ref: https://www.wotianna.com/
 - type: Coding Platform
   links:
   - name: Leetcode

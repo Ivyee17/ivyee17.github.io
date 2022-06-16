@@ -7,6 +7,7 @@
 {% endif %}
 
 {% assign check = include.path | split:'.' | last %}
+<h3>{{include.title}} - <a href="{{ fullurl }}" style="color: #494e52;">Download</a></h3>
 {% if check == "pdf" %}
 <iframe src="{{ fullurl }}#view=fitH" width="100%" height="750px" loading="lazy" style="border: none;" allowfullscreen="true" ></iframe>
 {% elsif check == "ppt" or check == "pptx" %}

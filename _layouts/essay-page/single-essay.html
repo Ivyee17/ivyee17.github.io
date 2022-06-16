@@ -64,20 +64,20 @@ layout: essay-page/default
 
       {% if page.paperurl %}
       <div>
-        <h3>Paper </h3>
-        {% include file_viewer.html path=page.paperurl %}
+        <!-- <h3>Paper </h3> -->
+        {% include file_viewer.html path=page.paperurl title='Paper' %}
       </div>
       {% endif %}
       {% if page.noteurl %}
       <div>
-        <h3>Note </h3>
-        {% include file_viewer.html path=page.noteurl %}
+        <!-- <h3>Note </h3> -->
+        {% include file_viewer.html path=page.noteurl title='Note' %}
       </div>
       {% endif %}
       {% if page.slideurl %}
       <div>
-        <h3>Slide </h3>
-        {% include file_viewer.html path=page.slideurl %}
+        <!-- <h3>Slide </h3> -->
+        {% include file_viewer.html path=page.slideurl title='Slide' %}
       </div>
       {% endif %}
       {% if page.youtubevideoid %}
