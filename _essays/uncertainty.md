@@ -5,6 +5,7 @@ paperurl: 'uncertainty/uncertainty_guided_continual_learning_with_bayesian_neura
 noteurl: 'uncertainty/uncertainty-notes.docx'
 date: 2021-06-01
 tags: [ICLR 2020]
+conference: ICLR 2020
 more:
  - name: 'Bayesian Coreset Construction via Greedy Iterative Geodesic Ascent'
    content: '<a href="/files/MultiRec/coresets-greedy-2018.pdf>Here</a>'

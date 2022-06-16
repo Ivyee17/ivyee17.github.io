@@ -8,5 +8,6 @@ tags: [RecSys 2020]
 more:
  - name: 'MF Validity?'
    content: '<a href="/files/MultiRec/notes-mf-useless.docx">Here</a>'
+conference: RecSys 2020
 ---
 

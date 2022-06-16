@@ -7,6 +7,7 @@ more:
  - name: 'Similar Topic'
    content: '<a href="/files/FedAMP/FedBoost.pdf">FedBoost</a>'
 date: 2021-05-03
+conference: AAAI 2020
 ---
 
 

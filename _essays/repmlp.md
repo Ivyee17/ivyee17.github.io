@@ -5,7 +5,7 @@ Image Recognition"
 paperurl: 'RepMLP/repmlp.pdf'
 slideurl: 'RepMLP/repmlp-slides.pptx'
 date: 2021-06-02
-tags: [arXiv]
+tags: [ArXiv]
 more:
  - name: 'external-attention'
    content: '<a href="/files/RepMLP/external-attention.pdf">Here</a>'

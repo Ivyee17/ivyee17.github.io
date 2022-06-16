@@ -6,6 +6,7 @@ paperurl: 'PURS-exception/purs-exec.pdf'
 slideurl: 'PURS-exception/slides.pptx'
 date: 2021-05-11
 tags: [RecSys 2020]
+conference: RecSys 2020
 more:
  - name: 'About unexpectedness'
    content: '<a href="/files/PURS-exception/unexpectedness.pdf">Here</a>'

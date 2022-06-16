@@ -9,6 +9,7 @@ more:
  - name: 'About Recommender'
    content: '<a href="/files/FedFast/8_Recommender.pdf">Slide</a>'
 date: 2021-04-26
+conference: KDD 2020
 ---
 
 

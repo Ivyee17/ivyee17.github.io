@@ -9,7 +9,7 @@ more:
  - name: 'Slides by author'
    content: '<a href="/files/2021-09/fraud-kdd2020-date-slides.pdf"> Click here</a>'
 date: 2021-11-16
-
+conference: KDD 2020
 ---
 
 
