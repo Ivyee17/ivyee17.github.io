@@ -109,6 +109,7 @@
 }
 
 .author__content {
+  
   display: table-cell;
   vertical-align: top;
   padding-left: 15px;
@@ -127,25 +128,26 @@
   margin: 0;
 
   @include breakpoint($large) {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
   }
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-size: $type-size-4;
 }
 
 .author__bio {
   margin: 0;
 
   @include breakpoint($large) {
-    margin-top: 10px;
+    margin-top: 3px;
     margin-bottom: 20px;
   }
 }
 
 .author__urls-wrapper {
+  
   position: relative;
   display: table-cell;
   vertical-align: middle;

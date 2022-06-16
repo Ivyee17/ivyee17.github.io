@@ -13,10 +13,13 @@
     box-shadow: #32323254 6px 8px 8px -2px; 
     // rgb(50 50 50 / 33%)
     padding: 0px 20px;
-    margin: 25px 0px;
-    font-size: 15px;
+    margin: 15px 0px 25px;
+    // font-size: 15px;
     border: 1px  solid #cecece;
     border-radius: 7px;
+}
+.page__date{
+    font-size:10pt;
 }
 
 @import "essay-page/vendor/breakpoint/breakpoint"; // media query mixins
