@@ -1,29 +1,3 @@
-# - name: Project
-#   link: /project/
-#   new_window: false
-#   highlight: false
-# - name: Blog
-#   link: /blog/
-#   new_window: false
-#   highlight: false
-# - name: About
-#   link: /about/
-#   new_window: false
-#   highlight: false
-# - name: Contact
-#   link: /contact/
-#   new_window: false
-#   highlight: false
-# - name: Login
-#   link: /
-#   new_window: true
-#   highlight: false
-# - name: Sign Up
-#   link: /
-#   new_window: true
-#   highlight: true
-
-# main links links -- string concat with site.url
 essay-page:
   - title: "Publications"
     url: /publications/
@@ -36,7 +10,7 @@ essay-page:
   - title: "Tags & Collections"
     url: /tags/
   - title: "Resumes"
-    url: /resumes/complete?home
+    url: /resumes/developer?home
         
   - title: "Exit"
     url: /

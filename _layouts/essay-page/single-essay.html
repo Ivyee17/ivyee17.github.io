@@ -115,7 +115,7 @@ layout: essay-page/default
       {% include essay-page/comments.html %} 
     {% endif %} -->
 
-    <div id="gitalk-container"></div>
+    <div id="gitalk-container" style="display: inline-block;width: 100%;"></div>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script> -->
     <link rel="stylesheet" href="/assets/css/gitalk.css">
@@ -138,7 +138,7 @@ layout: essay-page/default
     </script>
 
   </article>
-
+  
   {% comment %}
   <!-- only show related on a post page when not disabled -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
