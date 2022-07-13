@@ -122,16 +122,16 @@
             <div class="widget widget_toc">
                 <div class="decor">目录</div>
                 <!-- <button><a href="#" id="share">分享</a></button> -->
-                <h2>Living Project / 不可接触的</h2>
+                <h2>Dreaming Project / 可以接触的</h2>
                 
                 {% for collection in site.collections %}
                 {% if collection.label == "novels" %}
                 <ul>
                     {% assign docs = collection.docs | sort: 'index'  %}
                     {% for post in docs %}
-                    {% if post.index %}
+                    {% if post.index and post.url contains 'dp' %}
                     <li>
-                        <a href="/novels/{{post.index}}">LP{{ post.index }}. {{post.title}}</a>
+                        <a href="{{post.url}}">{{post.shortname}}{{ post.index }}. {{post.title}}</a>
                     </li>
                     {%endif%}
                     {% endfor %}

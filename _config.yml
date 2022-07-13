@@ -74,7 +74,7 @@ collections:
     permalink: /resumes/:categories/:title/
   novels:
     output: true
-    permalink: /novels/:title/
+    permalink: /novels/:path/
   
 paginate: 10
 paginate_path: "/blog/:num/"
@@ -82,10 +82,15 @@ permalink: pretty
 
 defaults:
   - scope:
-      path: ""
+      path: "_novels/lp"
       type: novels
     values:
-      layout: novel
+      layout: novel-lp
+  - scope:
+      path: "_novels/dp"
+      type: novels
+    values:
+      layout: novel-dp
   - scope:
       path: ""
       type: publications

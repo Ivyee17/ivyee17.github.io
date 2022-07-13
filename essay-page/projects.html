@@ -5,14 +5,12 @@ title: "Projects"
 author_profile: true
 ---
 
-
-
-
 {% include essay-page/base_path %}
 <h3 style="
     clear: both;
     line-height: 1;
     padding-top: 1rem;
+    padding-bottom: 1rem;
 ">My Contributions</h3>
 <div style="border: 1px solid #cccccc;
 border-radius: 1rem;
@@ -25,6 +23,7 @@ margin-left: 10px;">
     clear: both;
     line-height: 1;
     padding-top: 1rem;
+    padding-bottom: 1rem;
 ">My GitHub</h3>
 
 <div class="gitcards gc-user" data-user="ivyee17"></div>
@@ -32,7 +31,8 @@ margin-left: 10px;">
     clear: both;
     line-height: 1;
     padding-top: 1rem;
-">My Repositories</h3>
+    padding-bottom: 1rem;
+">My Repositories - <a href="https://github.com/Ivyee17?tab=repositories">See all</a></h3>
 <div id="allrepos">
 
 </div>
@@ -40,7 +40,8 @@ margin-left: 10px;">
     clear: both;
     line-height: 1;
     padding-top: 1rem;
-">My Stars</h3>
+    padding-bottom: 1rem;
+">My Stars - <a href="https://github.com/Ivyee17?tab=stars">See all</a></h3>
 <div id="allstarred"></div>
 <script type="text/javascript">
   async function getAllRepos() {
@@ -48,19 +49,23 @@ margin-left: 10px;">
     let response = await fetch(url);
     let info = await response.json();
     console.log(info);
-    for (var e of info) {
-      var el = document.getElementById("allrepos");
+    let counter=0;
+    for (let e of info) {
+      let el = document.getElementById("allrepos");
       el.innerHTML += "<div class=\"gitcards\" style=\"float: left;\" data-user=\"ivyee17\" data-repo=\"" + e.name + "\"></div>";
-      // break;
+      counter++;
+      if(counter>=5) break;
     }
     url = "https://api.github.com/users/" + "ivyee17" + "/starred";
     response = await fetch(url);
     info = await response.json();
     console.log(info);
-    for (var e of info) {
-      var el = document.getElementById("allstarred");
+    counter=0;
+    for (let e of info) {
+      let el = document.getElementById("allstarred");
       el.innerHTML += "<div class=\"gitcards\" style=\"float: left;\" data-user=\""+e.owner.login+"\" data-repo=\"" + e.name + "\"></div>";
-      // break;
+      counter++;
+      if(counter>=5) break;
     }
     $("#allstarred").append("<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/gitcards.css\"></link><script type=\"text/javascript\" src=\"../assets/js/jquery-1.10.1.min.js\"><\/script><script type=\"text/javascript\" src=\"../assets/js/gitcards.js\"><\/script>"); 
     
