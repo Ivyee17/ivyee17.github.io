@@ -1,4 +1,14 @@
 internship:
+- title: "Pre-approval System for AEJ Travel and Ground Transportation"
+  time: "2022.07 - 2022.08"
+  company: "Nomura Holdings, Inc."
+  position: "GIS开发工程师"
+  content:
+  - 基于Java(SpringBoot)和Javascript(React)的审批系统开发与实现，采用JPA对MySQL进行配置。
+  - 本人负责前端页面整体重构（组件化），包括对现有组件的抽象和封装，以利用组件复用机制对代码逻辑进行简化。同时，本人负责后端接口定义、基于Csv的Excel表单输出（包括对重复字段的设计与代码编写）与数据同步及数据库字段设计。
+  - 该项目对接ServiceNow平台，本人负责设计并实现状态同步功能，包括基于多线程的异步定时服务及状态有效期限制。采用Jira进行需求提出与Sprint管理，并配合Git进行代码rebase等分支控制。
+  - 在前端和后端分别采用mock对数据进行模拟，从而更好的分离前后端数据，并在项目完整迭代时进行集成和运行。
+  
 - title: "用于人工智能标准化的中心化人脸检测模型"
   time: "2021.10 - 2021.12"
   company: "依图（上海）科技有限公司"
