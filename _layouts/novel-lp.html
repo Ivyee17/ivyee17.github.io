@@ -255,6 +255,12 @@
 
     li {
         margin-left: 2rem;
+        list-style-type: upper-alpha;
+    }
+
+    li::marker {
+        font-size: 15px;
+        font-family: Arial;
     }
 
     /* Counteract the specificity of the gross *:not() chain. */
@@ -276,11 +282,13 @@
         font-family: Menlo, Monaco, "Courier New", monospace;
     }
 
-    pre {
-        background-color: #fafafa;
+    pre {    
         font-size: .8rem;
-        overflow-x: scroll;
+        word-break: break-all;
         padding: 1.125em;
+        white-space: break-spaces;
+        color: rgb(143,0,69);
+        margin-top: -75px !important;
     }
 
 
