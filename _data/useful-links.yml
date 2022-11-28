@@ -26,3 +26,11 @@
     ref: https://education.oracle.com/oracle-certified-associate-java-se-8-programmer/trackp_333
   - name: Java SE Programmer II (1Z0-809)
     ref: https://education.oracle.com/oracle-certified-professional-java-se-8-programmer/trackp_357
+- type: Magazine Download
+  links:
+  - name: freemagazinepdf (pdf-directly)
+    ref: https://freemagazinepdf.com/
+  - name: freemagazines.top (backup)
+    ref: https://freemagazines.top/
+  - name: magazinebis (beautified, from blackhole)
+    ref: https://magazinebis.com/
