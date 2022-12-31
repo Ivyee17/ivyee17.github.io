@@ -127,8 +127,8 @@
     h2,
     .splendor-h2 {
         font-size: 1rem;
-    text-align: center;
-    font-weight: bold;
+        text-align: center;
+        font-weight: bold;
     }
 
     h3,
@@ -180,12 +180,16 @@
         max-width: 100%;
         background: #eeeeee;
     }
-    ul p{
+
+    ul p,
+    ol p {
         text-indent: 0;
     }
-    img{
+
+    img {
         margin-left: -30px;
     }
+
     /* === A bit of a gross hack so we can have bleeding divs/blockquotes. */
 
     p,
@@ -252,14 +256,28 @@
         -moz-transform: rotate(1.4deg);
     }
 
-
-    li {
-        margin-left: 2rem;
-        list-style-type: upper-alpha;
+    ul li {
+        font-size: 16px;
+        margin-left: 20px;
     }
 
-    li::marker {
+    ul li::marker {
         font-size: 15px;
+
+    }
+
+    ol li {
+        margin-left: 1rem;
+        list-style-type: upper-alpha;
+        margin-bottom: 1rem;
+        padding-left: 0.25rem;
+
+
+
+    }
+
+    ol li::marker {
+        font-size: 18px;
         font-family: Arial;
     }
 
@@ -282,12 +300,12 @@
         font-family: Menlo, Monaco, "Courier New", monospace;
     }
 
-    pre {    
+    pre {
         font-size: .8rem;
         word-break: break-all;
         padding: 1.125em;
         white-space: break-spaces;
-        color: rgb(143,0,69);
+        color: rgb(143, 0, 69);
         margin-top: -75px !important;
     }
 
@@ -304,7 +322,7 @@
     }
 
     .decor {
-        background: linear-gradient(-55deg, transparent 49%, #268f04 49.5%, #268f04 50.5%, transparent 51%);
+        background: linear-gradient(-63deg, transparent 49%, #268f04 49.5%, #268f04 50.5%, transparent 51%);
         height: 3rem;
         width: 5rem;
         position: absolute;
@@ -385,9 +403,9 @@
         tt = "作者的话：<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + tt
         e.getElementsByTagName('p')[0].innerHTML = tt;
     }
-    let h1ele=document.getElementsByTagName('h1')[0]
-    let news=document.createElement('div')
-    news.style='text-align: end;margin-right: 9px;font-size: small;'
-    news.innerHTML='◻ 忆·墨'
+    let h1ele = document.getElementsByTagName('h1')[0]
+    let news = document.createElement('div')
+    news.style = 'text-align: end;margin-right: 9px;font-size: small;'
+    news.innerHTML = '◻ 忆·墨'
     h1ele.after(news)
 </script>
