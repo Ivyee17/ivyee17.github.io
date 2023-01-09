@@ -133,12 +133,13 @@
 
     h3,
     .splendor-h3 {
-        font-size: 0.8rem;
-    }
+        font-size: 0.9rem;
+        font-weight: 600;
+    } /* for LP12 only.  */
 
     h4,
     .splendor-h4 {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     h5,
@@ -400,7 +401,12 @@
         let tt = e.getElementsByTagName('p')[0].innerHTML
         tts = tt.split('\n')
         tt = tt.replace(/\n/g, '<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+        if(tt.match(/\[.*\]/)!=null ){
+           tt=tt.replace('[','');
+           tt=tt.replace(']','：<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
+        }else{
         tt = "作者的话：<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + tt
+    }
         e.getElementsByTagName('p')[0].innerHTML = tt;
     }
     let h1ele = document.getElementsByTagName('h1')[0]
