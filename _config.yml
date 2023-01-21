@@ -74,7 +74,7 @@ collections:
     permalink: /resumes/:categories/:title/
   novels:
     output: true
-    permalink: /prose/:path/
+    permalink: /proses/:path/
   
 paginate: 10
 paginate_path: "/blog/:num/"
