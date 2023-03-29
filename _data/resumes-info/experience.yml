@@ -34,6 +34,10 @@ internship:
   - 在实现过程中，面对百万级的数据，本人提出了一种可减少读取次数的数据库改进方案，从而可以成功处理高数据量场景下的筛选时长，对前端页面可以提升近300%页面响应效率，成功缩短了响应时间，从而为走向大规模量产的数据闭环提供了更好的用户体验。
 
 projects:
+- time: "2022.11 - 2023.03"
+  title: 语音相关部门非公开项目（保密截止于2023-06）
+  content:
+  - 语音相关非公开内容（保密截止于2023-06）
 - time: "2022.01 - 2022.06"
   title: GitHub Pages设计与重构
   content:
@@ -59,7 +63,7 @@ projects:
   - 该工具将基于遗传算法进行实现，以设计类图为输入，实现软件复杂度的降解。
   - 该平台基于Spring Boot(Jama)和Vue.js(Echarts)开发，使用MySQL和Redis数据库进行持久化存储。同时，还将提供Graphviz的桌面版，使用户可以离线进行操作。
   - 本人主要负责产品和数据库设计、代码实现及部署、接口调用、客户端展示、单元测试等。
-  - 在KSEM 2021(CCF-C)上以第一作者发表论文：Analyzing and Recommending Development Order Based on Design Class Diagram，实现了相关代码并申请了软件著作权。
+  - 本科毕业设计在改进初上进行项目管理方向上的改进，并与研究生期间在KSEM 2021(CCF-C)上以第一作者发表论文：Analyzing and Recommending Development Order Based on Design Class Diagram，实现了相关代码并申请了软件著作权。
 - time: "2020.03 - 2020.05"
   title: AchieveIt项目管理平台系统测试项目
   content:
@@ -95,7 +99,7 @@ outcomes:
 - title: "Tencent WeOpen Star Contributor (No. 0020)"
   time: "2022.05 - 2022.06"
   place: "Rank: <a href=\"https://github.com/weopenprojects/WeOpen-Star/blob/main/Contributors/ranking-list_May.md\">GitHub Repo Link</a> / Publishment: <a href=\"https://mp.weixin.qq.com/s/zGNU8Szh_rtrw9yyQ01AAQ\">WeChat Subscription @ WeOpen Star</a>"
-  details: "WeOpen Star: (1) Thoughts and ideas for related project at <a href=\"https://blog.51cto.com/u_13647519\">51CTO</a>, (2) experiences on the past open source project and (3) the improvements to the related projects. <br/> Best Notes: The demand discussion for Nebula-LINQ / experiences and summary for builtin C++ functions and translation work. <br/> <h4 class=num_anim>2</h4> nd top contributor in May / <h4 class=num_anim>659</h4> readings "
+  details: "WeOpen Star: (1) Thoughts and ideas for related project at <a href=\"https://blog.51cto.com/u_13647519\">51CTO</a>, (2) experiences on the past open source project and (3) the improvements to the related projects. <br/> Best Notes: The demand discussion for Nebula-LINQ / experiences and summary for builtin C++ functions and translation work. <br/> <h4 class=num_anim>2</h4> nd top contributor in May / <h4 class=num_anim>1494</h4> readings "
 - title: "OpenMLDB Active Contributor"
   time: "2022.04 - 2022.05"
   place: "OpenMLDB Git: <a href=\"https://github.com/4paradigm/OpenMLDB\">https://github.com/4paradigm/OpenMLDB</a>"

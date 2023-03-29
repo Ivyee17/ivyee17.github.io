@@ -8,3 +8,20 @@ birthday: 1998/08/17
 siteurl: http://ivyee17.github.io/
 city: 上海
 lang: zh # default cn. For any other string is en.
+cert:
+- name: CET-4
+  level: 542
+- name: CET-6
+  level: 458
+- name: NCRE (L2)
+  chname: 计算机二级
+  level: 优秀
+- name: PSC
+  chname: 普通话水平测试
+  level: 二甲
+- name: Driving License
+  level: C2
+- name: Passport
+  level: 2026-06-15 Expired
+- name: NTCE
+  level: 高中信息技术
