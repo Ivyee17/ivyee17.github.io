@@ -20,7 +20,10 @@
 
     <script src="/assets/js/cplayer.js"></script>
     <script>
-
+        let baseurl = '';
+        {% if page.baseurl %}
+        baseurl = '{{page.baseurl}}';
+        {% endif %}
         let lyric = '';
         let lyrics = '';
         let playlist = [];
@@ -28,46 +31,44 @@
         {% for details in page.playlist %}
         var tmp = new Promise(function (resolve, reject) {
             let _resolve = resolve;
-            $.get( encodeURI(encodeURI("{{ details.lyric }}")), function (d, status) {
+            $.get(baseurl + encodeURI(encodeURI("{{ details.lyric }}")), function (d, status) {
                 if (status == "success") {
                     lyric = d;
                     _resolve();
                 }
             });
         }).then(function (data) {
-            $.get( encodeURI(encodeURI("{{ details.lyrictrans }}")), function (d2, status) {
+            {% if details.lyrictrans %}
+            $.get(baseurl + encodeURI(encodeURI("{{ details.lyrictrans }}")), function (d2, status) {
                 if (status == "success") {
                     lyrics = d2;
                     Promise.resolve();
                 }
             });
+            {% else %}
+            Promise.resolve();
+            {% endif %}
         }).then(function (data) {
             let songname = '{{ details.song }}'.split('/');
             songname = songname[songname.length - 1];
 
             playlist.push({
-                src: encodeURI(encodeURI('{{ details.song }}')),
-                poster: '{{ details.poster }}',
+                src: baseurl + encodeURI(encodeURI('{{ details.song }}')),
+                poster: baseurl+'{{ details.poster }}',
                 name: '{{ details.title }}' || songname.split('-')[1],
                 artist: '{{ details.artist }}' || songname.split('-')[0],
                 lyric: lyric,
-                sublyric: lyrics,
+                sublyric: lyrics
             });
         });
         promises.push(tmp);
         {% endfor %}
-
         Promise.all(promises).then((res) => {
-            let player = new cplayer({
-                element: document.getElementById('app'),
-                playlist: playlist,
-            });
+            let player = new cplayer({ element: document.getElementById('app'), playlist: playlist });
 
-        }
-        ).catch(() => {
+        }).catch(() => {
             console.log("bbb");
         });
-
     </script>
 </body>
 

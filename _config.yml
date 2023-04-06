@@ -62,10 +62,10 @@ Timezone: Etc/UTC
 collections:
   publications:
     output: true
-    permalink: /:collection/:path/
+    permalink: /academic/:collection/:path/
   essays:
     output: true
-    permalink: /:collection/:title/
+    permalink: /academic/:collection/:title/
   musics:
     output: true
     permalink: /:collection/:path/
@@ -112,11 +112,11 @@ defaults:
       type: musics
     values:
       layout: music-page
-  - scope:
-      path: ""
-      type: resumes
-    values:
-      layout: resume-page/template2
+  # - scope:
+  #     path: ""
+  #     type: resumes
+  #   values:
+  #     layout: resume-page/template2
 
 
 # ---

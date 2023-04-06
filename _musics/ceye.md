@@ -1,4 +1,5 @@
 ---
+baseurl: 'https://raw.githubusercontent.com/Ivyee17/ivyee17-resources/main'
 playlist:
  - song: '/musics/wqf-didixingchui.mp3'
    poster: '/musics/wqf-cover.jpg'
