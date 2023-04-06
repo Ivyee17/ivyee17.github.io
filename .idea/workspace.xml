@@ -4,8 +4,8 @@
     <list default="true" id="ce6313a1-e73c-4af7-b8b6-c7d735e0db9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/essay-page/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/essay-page/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/essay-page/vendor/font-awesome/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/essay-page/vendor/font-awesome/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/academic-page/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/academic-page/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/academic-page/vendor/font-awesome/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/academic-page/vendor/font-awesome/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/fontawesome-all.min.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.scss" beforeDir="false" />
     </list>
@@ -18,7 +18,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_sass/essay-page/_footer.scss">
+        <entry file="file://$PROJECT_DIR$/_sass/academic-page/_footer.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-779">
               <caret line="4" column="7" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="13" />
@@ -27,14 +27,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_sass/essay-page/_buttons.scss">
+        <entry file="file://$PROJECT_DIR$/_sass/academic-page/_buttons.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2579" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_sass/essay-page/_print.scss">
+        <entry file="file://$PROJECT_DIR$/_sass/academic-page/_print.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
               <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
@@ -43,7 +43,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_sass/essay-page/_reset.scss">
+        <entry file="file://$PROJECT_DIR$/_sass/academic-page/_reset.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="179">
               <caret line="116" column="1" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />
@@ -98,7 +98,7 @@
               <item name="ivyee17.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="ivyee17.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_sass" type="462c0819:PsiDirectoryNode" />
-              <item name="essay-page" type="462c0819:PsiDirectoryNode" />
+              <item name="academic-page" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -221,19 +221,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/essay-page/_footer.scss">
+    <entry file="file://$PROJECT_DIR$/_sass/academic-page/_footer.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-779">
           <caret line="4" column="7" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/essay-page/_buttons.scss">
+    <entry file="file://$PROJECT_DIR$/_sass/academic-page/_buttons.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2579" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/essay-page/_print.scss">
+    <entry file="file://$PROJECT_DIR$/_sass/academic-page/_print.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
@@ -247,7 +247,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/essay-page/_reset.scss">
+    <entry file="file://$PROJECT_DIR$/_sass/academic-page/_reset.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="116" column="1" selection-start-line="116" selection-start-column="1" selection-end-line="116" selection-end-column="1" />

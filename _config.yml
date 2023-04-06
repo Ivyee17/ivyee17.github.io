@@ -50,7 +50,7 @@ author:
   xing             :
   youtube          : # "youtube.com"
   wikipedia        :
-  gitee            : "wenhan17" ## self-defined val!! not compat with essay-page sidebar!
+  gitee            : "wenhan17" ## self-defined val!! not compat with academic-page sidebar!
 
 
 
@@ -95,7 +95,7 @@ defaults:
       path: ""
       type: publications
     values:
-      layout: essay-page/single
+      layout: academic-page/single
       author_profile: true
       share: true
       comments: true
@@ -103,7 +103,7 @@ defaults:
       path: ""
       type: essays
     values:
-      layout: essay-page/single-essay
+      layout: academic-page/single-essay
       author_profile: true
       share: true
       comments: true

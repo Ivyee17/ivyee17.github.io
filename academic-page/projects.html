@@ -1,0 +1,74 @@
+---
+layout: academic-page/archive
+permalink: /academic/projects/
+title: "Projects"
+author_profile: true
+---
+
+{% include academic-page/base_path %}
+<h3 style="
+    clear: both;
+    line-height: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+">My Contributions</h3>
+<div style="border: 1px solid #cccccc;
+border-radius: 1rem;
+padding: 15px;
+padding-bottom: 25px;
+margin-left: 10px;">
+<img src="https://ghchart.rshah.org/409ba5/ivyee17"/>
+</div>
+<h3 style="
+    clear: both;
+    line-height: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+">My GitHub</h3>
+
+<div class="gitcards gc-user" data-user="ivyee17"></div>
+<h3 style="
+    clear: both;
+    line-height: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+">My Repositories - <a href="https://github.com/Ivyee17?tab=repositories">See all</a></h3>
+<div id="allrepos">
+
+</div>
+<h3 style="
+    clear: both;
+    line-height: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+">My Stars - <a href="https://github.com/Ivyee17?tab=stars">See all</a></h3>
+<div id="allstarred"></div>
+<script type="text/javascript">
+  async function getAllRepos() {
+    let url = "https://api.github.com/users/" + "ivyee17" + "/repos";
+    let response = await fetch(url);
+    let info = await response.json();
+    console.log(info);
+    let counter=0;
+    for (let e of info) {
+      let el = document.getElementById("allrepos");
+      el.innerHTML += "<div class=\"gitcards\" style=\"float: left;\" data-user=\"ivyee17\" data-repo=\"" + e.name + "\"></div>";
+      counter++;
+      if(counter>=5) break;
+    }
+    url = "https://api.github.com/users/" + "ivyee17" + "/starred";
+    response = await fetch(url);
+    info = await response.json();
+    console.log(info);
+    counter=0;
+    for (let e of info) {
+      let el = document.getElementById("allstarred");
+      el.innerHTML += "<div class=\"gitcards\" style=\"float: left;\" data-user=\""+e.owner.login+"\" data-repo=\"" + e.name + "\"></div>";
+      counter++;
+      if(counter>=5) break;
+    }
+    $("#allstarred").append("<link rel=\"stylesheet\" type=\"text/css\" href=\"../assets/css/gitcards.css\"></link><script type=\"text/javascript\" src=\"../assets/js/jquery-1.10.1.min.js\"><\/script><script type=\"text/javascript\" src=\"../assets/js/gitcards.js\"><\/script>"); 
+    
+  } 
+  getAllRepos();
+ </script>
