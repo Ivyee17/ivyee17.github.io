@@ -141,5 +141,5 @@ exclude:
   - LICENCE
 
 sass:
-  sass_dir: _sass
+  sass_dir: .
   style: compressed

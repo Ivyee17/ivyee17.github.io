@@ -12,5 +12,6 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from', '0.16.0'
   gem 'kramdown-parser-gfm', '1.1.0'
   gem 'kramdown', '2.3.2'
+  gem 'eventmachine', '1.2.7', git: 'https://github.com/eventmachine/eventmachine.git', tag: 'v1.2.7'
   gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 end
