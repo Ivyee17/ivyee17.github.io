@@ -1,7 +1,11 @@
 
 # Wenhan's Home
 
-Nothing more than visiting right now: [Link](https://ivyee17.github.io/)!
+It has migrated to the new site: https://whwu17.github.io/
+
+This repo is a redirect repo to the new site and a historical backup with past revisions.
+
+All links from https://ivyee17.github.io/ should be redirected to the new site.
 
 ## Develop
 

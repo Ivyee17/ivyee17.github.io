@@ -1,16 +1,11 @@
 ---
-title: "Page Not Found"
-excerpt: "Page not found. Your pixels are in another canvas."
-sitemap: false
+title: "Page Redirect"
 permalink: /404.html
 ---
 
-Sorry, but the page you were trying to view does not exist --- perhaps you can try searching for it below.
-
-<script type="text/javascript">
-  var GOOG_FIXURL_LANG = 'en';
-  var GOOG_FIXURL_SITE = '{{ site.url }}'
-</script>
-<script type="text/javascript"
-  src="//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js">
+<script>
+  const parsedUrl = window.location.href;
+  var new_url = old_url.replace('ivyee17', "whwu17"); 
+  window.location.replace(new_url);
+  document.write("Redirect to new site: "+new_url+". If not responding, please click this new link!")
 </script>
