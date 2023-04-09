@@ -1,7 +1,7 @@
 
 # Wenhan's Home
 
-It has migrated to the new site: https://whwu17.github.io/
+This personal website has migrated to the new site: https://whwu17.github.io/
 
 This repo is a redirect repo to the new site and a historical backup with past revisions.
 
