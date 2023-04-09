@@ -6,6 +6,9 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 </head>
+<script>
+	window.location.href="{{site.new_url}}";
+</script>
 <style>
 body {
   width: 100%;
@@ -40,8 +43,8 @@ h1 {
 }
 
 h2, h2 a {
-  font-size: 1em;
-  color: #387eff;
+  font-size: 20px;
+  color: #222;
   animation: appear 1s 3s forwards;
 }
 
@@ -87,7 +90,9 @@ h2, h2 a {
 	<div class="container">
 	<div class="loader"></div>
 		<h1>Redirecting</h1>
-		<h2>Migrated to new site: <a href="{{site.new_url}}">{{site.new_url}}</a>. If not responding, please click the new site url!</h2>
+		<h2>Migrated to new site: <a href="{{site.new_url}}">{{site.new_url}}</a>. </h2>
+		<h2>If not responding, please click the new site url.</h2>
 	</div>
 </body>
+
 
