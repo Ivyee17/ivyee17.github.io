@@ -6,8 +6,88 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 </head>
+<style>
+body {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+body:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  background-size: auto;
+}
+
+h1,
+h2 {
+  font-family: sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+	padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2, h2 a {
+  font-size: 1em;
+  color: #387eff;
+  animation: appear 1s 3s forwards;
+}
+
+.container {
+  margin: 4em;
+  text-align: center;
+}
+
+.loader {
+  animation: spinningColor 1.5s ease-in-out infinite;
+  margin: 50px auto;
+  border: 5px solid #aaa;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes spinningColor {
+  0% {
+    transform: rotate(360deg);
+    border-top:5px dashed #f56682;
+    border-bottom:5px dashed #387eff;
+  }
+  25% {
+    border-top:5px dashed #f591a6;
+    border-bottom:5px dashed #6da7f7;
+  }
+  50% {
+    border-top:5px dashed #fd878e;
+    border-bottom:5px dashed #4ba3ff;
+  }
+  75% {
+    border-top:5px dashed #f57f8f;
+    border-bottom:5px dashed #569dff;
+  }
+  100% {
+    border-top:5px dashed #f56682;
+    border-bottom:5px dashed #387eff;
+  }
+}
+</style>
 <body>
-	Redirect to new site: {{site.new_url}}. If not responding, please click this new link!
-	<script type="text/javascript">window.location.href='{{site.new_url}}';</script>
+	<div class="container">
+	<div class="loader"></div>
+		<h1>Redirecting</h1>
+		<h2>Migrated to new site: <a href="{{site.new_url}}">{{site.new_url}}</a>. If not responding, please click the new site url!</h2>
+	</div>
 </body>
 
